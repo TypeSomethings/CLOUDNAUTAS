@@ -1,0 +1,263 @@
+//VARIABLES
+$main-purple-color:rgb(81, 4, 178);
+$dark-purple-color:rgb(2, 1, 14);
+$default-color:rgb(255, 255, 255);
+$button-color:rgb(81, 4, 178);
+$card-background-color:rgb(3, 2, 22);
+$sm-card-shadow:0px 2px 14px rgba(81,4,178,0.34);
+
+//MARGINS - GAPS - PADDINGS
+$gap-between-elements:15px;
+$default-padding:3rem;
+$card-padding:1rem;
+$m-2:2rem;
+$m-5:5rem;
+$m-0-4:0.4rem;
+$border-radius:1rem;
+$card-button-font-size:18px;
+
+//MIXINS
+
+/*CARD*/
+@mixin card {
+    width: 362px;
+    height: 447px;
+    border-radius: $border-radius;
+    border:2px solid $main-purple-color;
+    background-color: $card-background-color;
+    padding:$card-padding;
+}
+
+@mixin card-title{
+    @include personalizedText(1.50rem,100 );
+    transform: rotate(-2deg);
+}
+
+@mixin card-button {
+    cursor: pointer;
+    border:none;
+    background-color: $main-purple-color;
+    border-radius: .10rem .10rem .80rem .80rem;
+    width: 21rem;
+    height: 3rem;
+    margin: -0.3rem auto auto -.3rem;
+    justify-content: center;
+
+    .card-text{
+        color:$default-color;
+        font-size: $card-button-font-size;
+    }
+}
+
+@mixin sections($display-type,$direction,$justify-type) {
+    display:$display-type;
+    flex-direction: $direction;
+    padding: $default-padding;
+    justify-content: $justify-type;
+}
+
+@mixin conteiners($display-type,$direction) {
+    display:$display-type;
+    flex-direction:$direction;
+    gap:$gap-between-elements;
+}
+
+@mixin personalizedText($font-size,$weight) {
+    font-family: 'Comodo';
+    color:$default-color;
+    font-size: $font-size;
+    font-weight: $weight;
+}
+
+@mixin  title {
+    @include personalizedText(2rem,200);
+    margin:$m-5 auto;
+}
+
+//ANIMATIONS
+@mixin card-hover {
+    border:2px solid rgb(113, 13, 235);
+}
+
+//DEFAULT
+*{
+    box-sizing: border-box; padding: 0; margin: 0; font-family: Poppins,'Poppins',sans-serif;
+    bottom: 0; top: 0; left: 0; right: 0; outline: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+//LOCAL FONTS
+@font-face {
+    font-family: 'Comodo';
+    src: url(fonts/Comodo.otf);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins.ttf);
+}
+//BODY
+body{
+    background-color: $dark-purple-color;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth
+}
+
+//DISPLAY LOGO
+.logo-display{
+    @include sections(flex,column,center);
+    justify-content: center;
+    align-items:center;
+    gap:$gap-between-elements;
+
+    .logo-display-conteiner{
+        @include conteiners(flex,row);
+
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+
+        .logo-name{
+            @include personalizedText(2rem,200);
+            margin-top: $m-0-4;
+        }
+    }
+
+    .line{
+        border:1px solid $main-purple-color;
+        border-radius: $border-radius;
+        width: 90%;
+        margin:0 auto;
+    }
+}
+
+//NAVBAR
+.navbar{
+    @include sections(flex,row,center);
+    margin-top: -5rem;
+
+    .navbar-conteiner{
+        @include conteiners(flex, row);;
+        margin:0 auto;
+
+        .list-items{
+            @include conteiners(flex,row);
+
+            .item{
+                @include conteiners(flex,row);
+                cursor: pointer;
+
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+
+                .icon-label{
+                    @include personalizedText(17px,100);
+                    margin-top:$m-0-4;
+                }
+            }
+        }
+    }
+}
+
+//HEADER
+
+.header-section{
+    @include sections(flex,row,normal);
+
+    .header-section-conteiner{
+        @include conteiners(flex,row);
+        gap:14rem;
+        margin:0 auto;
+
+
+        .header-text{
+            @include conteiners(flex,column);
+
+            .biggest-text{
+                @include personalizedText(3rem,200);
+            }
+
+            .medium-text{
+                color:$default-color;
+                font-weight: 100;
+            }
+        }
+    }
+}
+
+//PACKAGES
+
+.packages-section{
+    @include sections(flex,column,center);
+
+    .packages-section-title{
+        display:flex;
+        justify-content: center;
+
+        .title{
+        @include title();
+        }
+    }
+
+    .packages-section-conteiner{
+        @include conteiners(flex,row);
+        justify-content: center;
+
+        //CARD
+        .card{
+            @include card();
+            transition: all 500ms ease;
+
+            .card:hover{
+                //@include card-hover();
+            }
+
+            //CARD TITLE
+            .card-title{
+                display:flex;
+                justify-content: center;
+
+                h2{
+                    @include card-title();
+                }
+            }
+
+            //CARD INFO
+            .card-info-conteiner{
+                @include conteiners(flex,column);
+
+                .list-items{
+                    @include conteiners(flex,column);
+                    margin:25px auto;
+
+                    .item{
+                        @include conteiners(flex,row);
+
+                        .list-icon{
+                            width: 34px;
+                            height: 34px;
+                        }
+
+                        .icon-label{
+                            color:$default-color;
+                            margin-top:.2rem;
+                        }
+                    }
+                }
+            }
+
+            //CARD BUTTON
+            .card-button{
+                @include card-button();
+            }
+        }
+
+    }
+}
