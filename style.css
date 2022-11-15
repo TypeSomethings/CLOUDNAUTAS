@@ -326,9 +326,167 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
-.packages-section .packages-section-conteiner .card .card-button .card-text {
+.packages-section .packages-section-conteiner .card .card-button .button-text {
+  color: white;
+  font-size: 18px;
+}
+
+.packages-section .packages-section-conteiner .card .card-button:hover {
+  background-color: #710deb;
+}
+
+.packages-section .packages-section-conteiner .card:hover {
+  border: 2px solid #710deb;
+  cursor: pointer;
+}
+
+.partnership-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+}
+
+.partnership-section .partnership-section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.partnership-section .partnership-section-title .title {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 5rem auto;
+  margin-bottom: -0.4rem;
+}
+
+.partnership-section .partnership-section-title .title-description {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+.partnership-section .partnership-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.partnership-section .partnership-conteiner .companies-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  margin-top: 10rem;
+}
+
+.partnership-section .partnership-conteiner .companies-display .companie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.partnership-section .partnership-conteiner .companies-display .companie .companie-logo {
+  width: 75px;
+  height: 75px;
+}
+
+.partnership-section .partnership-conteiner .companies-display .companie .companie-name {
+  color: white;
+  font-weight: 200;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.partnership-section .partnership-conteiner .companies-display .companie:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  cursor: pointer;
+}
+
+.partnership-section .partnership-conteiner .companies-display-large-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partnership-section .large-text {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 2em;
+  font-weight: 200;
+  font-family: 'Poppins';
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 3rem auto;
+}
+
+.partnership-section .large-button {
+  cursor: pointer;
+  border: none;
+  background-color: #5104b2;
+  border-radius: .10rem .10rem .80rem .80rem;
+  width: 98%;
+  height: 3rem;
+  margin: 3rem auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.partnership-section .large-button .button-text {
   color: white;
   font-size: 18px;
 }

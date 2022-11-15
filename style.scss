@@ -43,7 +43,23 @@ $card-button-font-size:18px;
     margin: -0.3rem auto auto -.3rem;
     justify-content: center;
 
-    .card-text{
+    .button-text{
+        color:$default-color;
+        font-size: $card-button-font-size;
+    }
+}
+
+@mixin large-button {
+    cursor: pointer;
+    border:none;
+    background-color: $main-purple-color;
+    border-radius: .10rem .10rem .80rem .80rem;
+    width: 98%;
+    height: 3rem;
+    margin: 3rem auto;
+    justify-content: center;
+
+    .button-text{
         color:$default-color;
         font-size: $card-button-font-size;
     }
@@ -77,6 +93,11 @@ $card-button-font-size:18px;
 //ANIMATIONS
 @mixin card-hover {
     border:2px solid rgb(113, 13, 235);
+    cursor: pointer;
+}
+
+@mixin card-button-hover {
+    background-color: rgb(113, 13, 235);
 }
 
 //DEFAULT
@@ -215,10 +236,6 @@ body{
             @include card();
             transition: all 500ms ease;
 
-            .card:hover{
-                //@include card-hover();
-            }
-
             //CARD TITLE
             .card-title{
                 display:flex;
@@ -256,8 +273,102 @@ body{
             //CARD BUTTON
             .card-button{
                 @include card-button();
+                transition:all 500ms ease;
+            }
+
+            //CARD BUTTON HOVER
+            .card-button:hover{
+                @include card-button-hover();
             }
         }
 
+        //CARD HOVER
+        .card:hover{
+            @include card-hover();
+        }
+
     }
+}
+
+//PARTNERSHIPS
+
+.partnership-section{
+    @include sections(flex,column ,normal);
+
+    //TITLE
+    .partnership-section-title{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title{
+            @include title();
+            margin-bottom: -$m-0-4;
+        }
+
+        .title-description{
+            color:$default-color;
+            font-weight: 100;
+            text-align: center;
+        }
+    }
+
+    //CONTEINER
+    .partnership-conteiner{
+        @include conteiners(flex,column);
+        margin:0 auto;
+
+        .companies-display{
+            @include conteiners(flex,row);
+            margin-top: 10rem;
+
+            .companie{
+                @include conteiners(flex,row);
+                transition:all 500ms ease;
+
+                .companie-logo{
+                    width: 75px;
+                    height: 75px;
+                }
+
+                .companie-name{
+                    color:$default-color;
+                    font-weight: 200;
+                    align-self:center;
+                    transition:all 500ms ease;
+                }
+
+                
+            }
+
+            .companie:hover{
+                transform:scale(1.1);
+                transform-origin: center;
+                cursor: pointer;
+            }
+
+        }
+        .companies-display-large-text{
+            @include conteiners(flex,column);
+            justify-content: center;
+
+        }
+
+        
+    }
+
+    //LARGE TEXT
+    .large-text{
+        @include personalizedText(2em,200);
+        font-family: 'Poppins';
+        text-align: center;
+        align-self:center;
+        margin:3rem auto;
+    }
+
+    //LARGE BUTTON
+        .large-button{
+            @include large-button();
+        }
+
 }
