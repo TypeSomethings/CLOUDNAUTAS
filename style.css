@@ -490,4 +490,164 @@ body {
   color: white;
   font-size: 18px;
 }
+
+.plans-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+}
+
+.plans-section .plans-section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.plans-section .plans-section-title .title {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 5rem auto;
+  margin-bottom: 0.4rem;
+}
+
+.plans-section .plans-section-title .title-description {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+.plans-section .plans-section-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plans-section .plans-section-conteiner .card {
+  width: 362px;
+  height: 447px;
+  border-radius: 1rem;
+  border: 2px solid #5104b2;
+  background-color: #030216;
+  padding: 1rem;
+  height: 349px;
+  margin-top: 3rem;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.plans-section .plans-section-conteiner .card .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plans-section .plans-section-conteiner .card .card-title h2 {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.plans-section .plans-section-conteiner .card .card-info-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.plans-section .plans-section-conteiner .card .card-info-conteiner .list-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+}
+
+.plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
+  width: 34px;
+  height: 34px;
+}
+
+.plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
+  color: white;
+  margin-top: .2rem;
+}
+
+.plans-section .plans-section-conteiner .card .card-button {
+  cursor: pointer;
+  border: none;
+  background-color: #5104b2;
+  border-radius: .10rem .10rem .80rem .80rem;
+  width: 21rem;
+  height: 3rem;
+  margin: -0.3rem auto auto -.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.plans-section .plans-section-conteiner .card .card-button .button-text {
+  color: white;
+  font-size: 18px;
+}
+
+.plans-section .plans-section-conteiner .card .card-button:hover {
+  background-color: #710deb;
+}
+
+.plans-section .plans-section-conteiner .card:hover {
+  border: 2px solid #710deb;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
