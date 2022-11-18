@@ -4,6 +4,7 @@ $dark-purple-color:rgb(2, 1, 14);
 $default-color:rgb(255, 255, 255);
 $button-color:rgb(81, 4, 178);
 $card-background-color:rgb(3, 2, 22);
+$form-input-background-color:rgba(26, 0, 59, 1);
 $sm-card-shadow:0px 2px 14px rgba(81,4,178,0.34);
 $medium-card-height:349px;
 $small-card-height:85px;
@@ -607,4 +608,149 @@ body{
         }
     }
   }
+}
+
+//SUBSCRIBE
+
+.subscribe-section{
+    @include sections(flex,column,normal);
+
+    //TITLE
+    .subscribe-section-title{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title{
+            @include title();
+            margin-bottom: $m-0-4;
+        }
+
+        .title-description{
+            color:$default-color;
+            font-weight: 100;
+            text-align: center;
+        }
+    }
+
+    .subscribe-section-conteiner{
+        @include conteiners(flex,row);
+        justify-content: center;
+
+        //CARD
+        .card{
+            @include card();
+            width: 475px;
+            height: 437px;
+            margin-top:$m-2 + 1;
+            @include conteiners(flex,column);
+            transition: all 500ms ease;
+
+            //CARD TITLE
+            .card-title{
+                display:flex;
+                justify-content: center;
+
+                h2{
+                    @include card-title();
+                }
+            }
+
+            //CARD INFO
+            .card-info-conteiner{
+                @include conteiners(flex,column);
+                margin-top: 1.4rem;
+
+                input{
+                    border:none;
+                    padding:1.50rem 5rem;
+                    border-radius: .40rem;
+                    color:$main-purple-color;
+                    background-color:$form-input-background-color;
+                    margin-bottom: 1rem;
+                }
+
+                input::placeholder{
+                    color:$main-purple-color;
+                }
+
+            }
+
+            //CARD BUTTON
+            .card-button{
+                @include card-button();
+                color:$default-color;
+                font-size: $card-button-font-size;
+                width: 28rem;
+                margin: -0.3rem auto auto -.3rem;
+                bottom: 0;
+                transition:all 500ms ease;
+            }
+
+            //CARD BUTTON HOVER
+            .card-button:hover{
+                @include card-button-hover();
+            }
+        }
+
+        //CARD HOVER
+        .card:hover{
+            @include card-hover();
+        }
+
+        //USERS PHOTOS
+        .users-photos-left,.users-photos-right{
+            .card{
+                width: 87px;
+                height: 87px;
+                box-shadow:$sm-card-shadow;
+
+                .user-photo{
+                    width: 55px;
+                    height: 55px;
+                    align-self:center;
+                    margin:0;
+                }
+            }
+        }
+
+        .users-photos-left{
+
+            #tin-card-1{
+                transform:translateX(-230px);
+            }
+
+            #tin-card-2{
+                transform:translate(-210px,50px);
+            }
+
+            #tin-card-3{
+                transform:translate(-20px,-100px);
+            }
+
+            #tin-card-4{
+                transform:translateX(-230px);
+            }
+        }
+
+        .users-photos-right{
+
+            #tin-card-1{
+                transform:translateX(30px);
+            }
+
+            #tin-card-2{
+                transform:translate(210px,30px);
+            }
+
+            #tin-card-3{
+                transform:translate(20px,-100px);
+            }
+
+            #tin-card-4{
+                transform:translateX(45px);
+            }
+        }
+
+    }
 }

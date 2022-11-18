@@ -862,4 +862,227 @@ body {
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .experiment-button button p {
   color: white;
 }
+
+.subscribe-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+}
+
+.subscribe-section .subscribe-section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.subscribe-section .subscribe-section-title .title {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 5rem auto;
+  margin-bottom: 0.4rem;
+}
+
+.subscribe-section .subscribe-section-title .title-description {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+}
+
+.subscribe-section .subscribe-section-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe-section .subscribe-section-conteiner .card {
+  width: 362px;
+  height: 447px;
+  border-radius: 1rem;
+  border: 2px solid #5104b2;
+  background-color: #030216;
+  padding: 1rem;
+  width: 475px;
+  height: 437px;
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-title h2 {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  margin-top: 1.4rem;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input {
+  border: none;
+  padding: 1.50rem 5rem;
+  border-radius: .40rem;
+  color: #5104b2;
+  background-color: #1a003b;
+  margin-bottom: 1rem;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-webkit-input-placeholder {
+  color: #5104b2;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input:-ms-input-placeholder {
+  color: #5104b2;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-ms-input-placeholder {
+  color: #5104b2;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::placeholder {
+  color: #5104b2;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-button {
+  cursor: pointer;
+  border: none;
+  background-color: #5104b2;
+  border-radius: .10rem .10rem .80rem .80rem;
+  width: 21rem;
+  height: 3rem;
+  margin: -0.3rem auto auto -.3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-size: 18px;
+  width: 28rem;
+  margin: -0.3rem auto auto -.3rem;
+  bottom: 0;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-button .button-text {
+  color: white;
+  font-size: 18px;
+}
+
+.subscribe-section .subscribe-section-conteiner .card .card-button:hover {
+  background-color: #710deb;
+}
+
+.subscribe-section .subscribe-section-conteiner .card:hover {
+  border: 2px solid #710deb;
+  cursor: pointer;
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-left .card, .subscribe-section .subscribe-section-conteiner .users-photos-right .card {
+  width: 87px;
+  height: 87px;
+  -webkit-box-shadow: 0px 2px 14px rgba(81, 4, 178, 0.34);
+          box-shadow: 0px 2px 14px rgba(81, 4, 178, 0.34);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-left .card .user-photo, .subscribe-section .subscribe-section-conteiner .users-photos-right .card .user-photo {
+  width: 55px;
+  height: 55px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-1 {
+  -webkit-transform: translateX(-230px);
+          transform: translateX(-230px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-2 {
+  -webkit-transform: translate(-210px, 50px);
+          transform: translate(-210px, 50px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-3 {
+  -webkit-transform: translate(-20px, -100px);
+          transform: translate(-20px, -100px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-4 {
+  -webkit-transform: translateX(-230px);
+          transform: translateX(-230px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-1 {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-2 {
+  -webkit-transform: translate(210px, 30px);
+          transform: translate(210px, 30px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-3 {
+  -webkit-transform: translate(20px, -100px);
+          transform: translate(20px, -100px);
+}
+
+.subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-4 {
+  -webkit-transform: translateX(45px);
+          transform: translateX(45px);
+}
 /*# sourceMappingURL=style.css.map */
