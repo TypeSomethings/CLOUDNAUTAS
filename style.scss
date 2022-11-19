@@ -754,3 +754,105 @@ body{
 
     }
 }
+
+
+//DOWNLOAD
+
+.download-section{
+    @include sections(flex,column,normal);
+
+    //TITLE
+    .download-section-title{
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .title{
+            @include title();
+            margin-bottom: $m-0-4;
+        }
+
+    }
+
+    .logo-display{
+        margin:$m-0-4 auto;
+    }
+
+    .download-section-conteiner{
+        @include conteiners(flex,row);
+        justify-content: space-evenly;
+
+        //CARD
+        .download-option{
+            @include conteiners(flex,column);
+            margin-bottom: $m-0-4;
+
+            .card-title{
+                color:$default-color;
+                font-size: 18px;
+                font-weight: 100;
+                margin:0 auto;
+            }
+
+            .card{
+                @include card();
+                transition:all 500ms ease;
+                @include conteiners(flex,row);
+                height:$small-card-height + 10;
+
+                .list-icon{
+                    width: 50px;
+                    height: 50px;
+                    align-self:center;
+                }
+
+                .icon-label{
+                    font-size: 22px;
+                    color:$default-color;
+                    align-self:center;
+                }
+            }
+
+            .card:hover{
+                @include card-hover();
+            }
+        }
+
+    }
+
+    //HELP OPTIONS
+    .help-options{
+        margin-top: $m-5 + 2;
+
+        .line{
+            border:1px solid $main-purple-color;
+            border-radius: $border-radius;
+            width: 90%;
+            margin:0 auto;
+        }
+
+        .options{
+            padding:1.1rem;
+            @include conteiners(flex,row);
+            margin-left: 5rem;
+
+            .icon-label{
+                color:$default-color;
+                font-size: 17px;
+                cursor: pointer;
+            }
+
+            .list-icon{
+                width: 34px;
+                height: 34px;
+                cursor: pointer;
+                transition:all 500ms ease;
+            }
+
+            .list-icon:hover{
+                transform:translateX(15px);
+            }
+        }
+
+    }
+}
