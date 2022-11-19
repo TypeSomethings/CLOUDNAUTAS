@@ -1242,4 +1242,115 @@ body {
   -webkit-transform: translateX(15px);
           transform: translateX(15px);
 }
+
+.footer-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  -webkit-box-pack: normal;
+      -ms-flex-pack: normal;
+          justify-content: normal;
+  margin-top: 3rem;
+  border-top: 4rem solid #5104b2;
+}
+
+.footer-section .footer-section-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  margin-top: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer-section .footer-section-conteiner .brand {
+  margin-left: -5rem;
+}
+
+.footer-section .footer-section-conteiner .brand .logo {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 200;
+}
+
+.footer-section .footer-section-conteiner .brand .logo-description {
+  color: white;
+  font-weight: lighter;
+}
+
+.footer-section .footer-section-conteiner .footer-option-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.footer-section .footer-section-conteiner .footer-option-list .title {
+  font-family: 'Comodo';
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.footer-section .footer-section-conteiner .footer-option-list .list-items {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.footer-section .footer-section-conteiner .footer-option-list .list-items a {
+  text-decoration: none;
+}
+
+.footer-section .footer-section-conteiner .footer-option-list .list-items a .item {
+  color: white;
+  margin-bottom: .8rem;
+  font-weight: lighter;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.footer-section .footer-section-conteiner .cloudnautas-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  margin-top: 2.3rem;
+}
+
+.footer-section .footer-section-conteiner .cloudnautas-social .list-icon {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.footer-section .logo-display {
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.footer-section .logo-display .copyright-info p {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
