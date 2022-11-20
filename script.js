@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.body-section',{
-    delay:526,
+    delay:426,
     reset: true,
     duration:500
 });
