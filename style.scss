@@ -968,5 +968,82 @@ body{
         }
     }
 
-    //packages
+    //PACKAGES
+    .packages-section{
+    @include sections(flex,column,center);
+
+    .packages-section-title{
+        display:flex;
+        justify-content: center;
+
+        .title{
+        @include title();
+        }
+    }
+
+    .packages-section-conteiner{
+        @include conteiners(flex,column);
+        gap:$m-5 - 1;
+        margin:0 auto;
+
+        //CARD
+        .card{
+            @include card();
+            transition: all 500ms ease;
+
+            //CARD TITLE
+            .card-title{
+                display:flex;
+                justify-content: center;
+
+                h2{
+                    @include card-title();
+                }
+            }
+
+            //CARD INFO
+            .card-info-conteiner{
+                @include conteiners(flex,column);
+
+                .list-items{
+                    @include conteiners(flex,column);
+                    margin:38px auto;
+
+                    .item{
+                        @include conteiners(flex,row);
+
+                        .list-icon{
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        .icon-label{
+                            color:$default-color;
+                            margin-top:.2rem;
+                        }
+                    }
+                }
+            }
+
+            //CARD BUTTON
+            .card-button{
+                @include card-button();
+                transition:all 500ms ease;
+            }
+
+            //CARD BUTTON HOVER
+            .card-button:hover{
+                @include card-button-hover();
+            }
+        }
+
+        //CARD HOVER
+        .card:hover{
+            @include card-hover();
+        }
+
+    }
+}
+
+
 }

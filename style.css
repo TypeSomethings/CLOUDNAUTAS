@@ -1394,5 +1394,135 @@ body {
     font-size: 16px;
     font-weight: 100;
   }
+  .packages-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .packages-section .packages-section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .packages-section .packages-section-title .title {
+    font-family: 'Comodo';
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 5rem auto;
+  }
+  .packages-section .packages-section-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    gap: 4rem;
+    margin: 0 auto;
+  }
+  .packages-section .packages-section-conteiner .card {
+    width: 362px;
+    height: 447px;
+    border-radius: 1rem;
+    border: 2px solid #5104b2;
+    background-color: #030216;
+    padding: 1rem;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .packages-section .packages-section-conteiner .card .card-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .packages-section .packages-section-conteiner .card .card-title h2 {
+    font-family: 'Comodo';
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  .packages-section .packages-section-conteiner .card .card-info-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+  }
+  .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    margin: 38px auto;
+  }
+  .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+  }
+  .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
+    color: white;
+    margin-top: .2rem;
+  }
+  .packages-section .packages-section-conteiner .card .card-button {
+    cursor: pointer;
+    border: none;
+    background-color: #5104b2;
+    border-radius: .10rem .10rem .80rem .80rem;
+    width: 21rem;
+    height: 3rem;
+    margin: -0.3rem auto auto -.3rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .packages-section .packages-section-conteiner .card .card-button .button-text {
+    color: white;
+    font-size: 18px;
+  }
+  .packages-section .packages-section-conteiner .card .card-button:hover {
+    background-color: #710deb;
+  }
+  .packages-section .packages-section-conteiner .card:hover {
+    border: 2px solid #710deb;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */
