@@ -1121,5 +1121,92 @@ body{
     
     }
 
+    //PLANS
+    .plans-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .plans-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin-bottom: $m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        .plans-section-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            //CARD
+            .card{
+                @include card();
+                height:$medium-card-height;
+                margin-top:$m-2 + 1;
+                transition: all 500ms ease;
+    
+                //CARD TITLE
+                .card-title{
+                    display:flex;
+                    justify-content: center;
+    
+                    h2{
+                        @include card-title();
+                    }
+                }
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,column);
+    
+                    .list-items{
+                        @include conteiners(flex,column);
+                        margin:42px auto;
+    
+                        .item{
+                            @include conteiners(flex,row);
+    
+                            .list-icon{
+                                width: 24px;
+                                height: 24px;
+                            }
+    
+                            .icon-label{
+                                color:$default-color;
+                               margin-top:-.1rem;
+                            }
+                        }
+                    }
+                }
+    
+                //CARD BUTTON
+                .card-button{
+                    @include card-button();
+                    transition:all 500ms ease;
+                }
+    
+                //CARD BUTTON HOVER
+                .card-button:hover{
+                    @include card-button-hover();
+                }
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+        }
+    }
 
 }
