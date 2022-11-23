@@ -2055,5 +2055,145 @@ body {
   .subscribe-section .subscribe-section-conteiner .users-photos-left, .subscribe-section .subscribe-section-conteiner .users-photos-right {
     display: none;
   }
+  .download-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+  }
+  .download-section .download-section-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .download-section .download-section-title .title {
+    font-family: 'Comodo';
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 5rem auto;
+    margin-bottom: 2rem;
+  }
+  .download-section .logo-display {
+    margin: 0.4rem auto;
+  }
+  .download-section .download-section-conteiner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .download-section .download-section-conteiner .download-option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    margin-bottom: 1rem;
+  }
+  .download-section .download-section-conteiner .download-option .card-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 auto;
+  }
+  .download-section .download-section-conteiner .download-option .card {
+    width: 362px;
+    height: 447px;
+    border-radius: 1rem;
+    border: 2px solid #5104b2;
+    background-color: #030216;
+    padding: 1rem;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+    height: 95px;
+  }
+  .download-section .download-section-conteiner .download-option .card .list-icon {
+    width: 50px;
+    height: 50px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .download-section .download-section-conteiner .download-option .card .icon-label {
+    font-size: 22px;
+    color: white;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .download-section .download-section-conteiner .download-option .card:hover {
+    border: 2px solid #710deb;
+    cursor: pointer;
+  }
+  .download-section .help-options {
+    margin-top: 7rem;
+  }
+  .download-section .help-options .line {
+    border: 1px solid #5104b2;
+    border-radius: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .download-section .help-options .options {
+    padding: 1.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 15px;
+    margin-left: 5rem;
+  }
+  .download-section .help-options .options .icon-label {
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .download-section .help-options .options .list-icon {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+  }
+  .download-section .help-options .options .list-icon:hover {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
