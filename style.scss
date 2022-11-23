@@ -1209,4 +1209,90 @@ body{
         }
     }
 
+    //FEATURES
+    .features-section{
+        @include sections(flex,column,center);
+        padding:$default-padding;
+
+        .experiment-features{
+            display: none;
+        }
+    
+        //TITLE
+        .features-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                margin-bottom: $m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        .features-section-conteiner{
+            @include conteiners(flex,row);
+            justify-content: center;
+            margin:4rem auto 2rem auto;
+    
+            //FEATURES
+            .features{
+                @include conteiners(flex,column);
+                margin-top: 3rem;
+    
+                //CARD
+            .small-card{
+                @include card();
+                height:$small-card-height;
+                transition: all 500ms ease;
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,row);
+    
+                    .sm-card-image{
+                        width: 45px;
+                        height: 45px;
+                    }
+    
+                    .icon-label{
+                        color:$default-color;
+                        align-self: center;
+                        font-size: 18px;
+                        font-weight: 200;
+                    }
+                }
+    
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+    
+            //FIRST CARD
+            #sm-card-1{
+                margin-bottom:$m-0-4 + 1;
+            }
+    
+            //SECOND CARD
+            #sm-card-2{
+                transform: translateX($m-2 - 0.70rem);
+                margin-bottom:$m-0-4 + 1;
+            }
+             //THIRD CARD
+             #sm-card-3{
+                transform: translateX($m-2 + 1rem);
+            }
+        }
+      }
+    }
+
 }
