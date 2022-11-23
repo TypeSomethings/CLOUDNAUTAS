@@ -1494,4 +1494,82 @@ body{
         }
     }
 
+    //FOOTER
+    .footer-section{
+        @include sections(flex,column,normal);
+        margin-top:$m-5 - 2;
+        border-top:$m-5 - 1 solid $main-purple-color;
+    
+        .footer-section-conteiner{
+            @include conteiners(flex,column);
+            margin-top: $m-2 + 2;
+            justify-content: center;
+    
+            //BRAND
+            .brand{
+                margin:0 0 1rem -.10rem ;
+    
+                .logo{
+                    @include personalizedText(2.30rem,200);
+                }
+                
+                .logo-description{
+                    color:$default-color;
+                    font-weight: lighter;
+                }
+    
+            }
+    
+            //FOOTER OPTIONS
+            .footer-option-list{
+                @include conteiners(flex,column);
+    
+                .title{
+                    @include personalizedText(1.3rem,200);
+                }
+    
+                .list-items{
+                    justify-content: center;
+                    list-style: none;
+    
+                    a{
+                        text-decoration: none;
+                        
+                        .item{
+                            color:$default-color;
+                            margin-bottom: .8rem;
+                            font-weight: lighter;
+                            cursor: pointer;
+                            transition:all 500ms ease;
+                        }
+    
+                    }
+                }
+            }
+    
+            .cloudnautas-social{
+                @include conteiners(flex,row);
+                margin-top: 2.3rem;
+    
+                .list-icon{
+                    width: 34px;
+                    height: 34px;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    
+        .logo-display{
+            margin-top: $m-5;
+            cursor: pointer;
+            
+            .copyright-info{
+                p{
+                color:$default-color;
+            }
+            }
+        }
+    }
+
 }
