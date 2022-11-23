@@ -1295,4 +1295,103 @@ body{
       }
     }
 
+    //SUBSCRIBE
+    .subscribe-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .subscribe-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin:0 auto $m-0-4 auto;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: $m-2;
+            }
+        }
+    
+        .subscribe-section-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            //CARD
+            .card{
+                @include card();
+                width: 400px;
+                height: 437px;
+                margin-top:$m-2 + 1;
+                @include conteiners(flex,column);
+                margin:0 auto;
+                transition: all 500ms ease;
+    
+                //CARD TITLE
+                .card-title{
+                    display:flex;
+                    justify-content: center;
+    
+                    h2{
+                        @include card-title();
+                        text-align: center;
+                    }
+                }
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,column);
+                    margin-top: 1.4rem;
+    
+                    input{
+                        border:none;
+                        padding:1.50rem 5rem;
+                        border-radius: .40rem;
+                        color:$main-purple-color;
+                        background-color:$form-input-background-color;
+                        margin-bottom: 1rem;
+                    }
+    
+                    input::placeholder{
+                        color:$main-purple-color;
+                    }
+    
+                }
+    
+                //CARD BUTTON
+                .card-button{
+                    @include card-button();
+                    color:$default-color;
+                    font-size: $card-button-font-size;
+                    width: 23.35rem;
+                    margin: -0.3rem auto auto -.3rem;
+                    bottom: 0;
+                    transition:all 500ms ease;
+                }
+    
+                //CARD BUTTON HOVER
+                .card-button:hover{
+                    @include card-button-hover();
+                }
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+            //USERS PHOTOS
+            .users-photos-left,.users-photos-right{
+                display:none;
+            }
+    
+        }
+    }
+
 }
