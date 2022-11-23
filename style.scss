@@ -935,3 +935,38 @@ body{
         }
     }
 }
+
+//MOBILE VERSION
+@media screen and (max-width:767px) {
+    .logo-display,.header-image{
+        display: none;
+    }
+
+    //NAVBAR
+    .navbar{
+        margin-top: 1rem;
+        gap:0;
+    
+        .navbar-conteiner{
+            @include conteiners(flex, row);;
+    
+            .list-items{
+                @include conteiners(flex,row);
+    
+                .item{
+                    gap:5px;
+    
+                    img{
+                        display:none;
+                    }
+    
+                    .icon-label{
+                        @include personalizedText(16px,100);
+                    }
+                }
+            }
+        }
+    }
+
+    //packages
+}
