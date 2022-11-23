@@ -1045,5 +1045,81 @@ body{
     }
 }
 
+    //PARTNERSHIPS
+    .partnership-section{
+        @include sections(flex,column ,center);
+    
+        //TITLE
+        .partnership-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin-bottom: -$m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        //CONTEINER
+        .partnership-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            .companies-display{
+                @include conteiners(flex,row);
+                flex-wrap: wrap;
+                margin-top: 10rem;
+    
+                .companie{
+                    @include conteiners(flex,row);
+                    transition:all 500ms ease;
+    
+                    .companie-logo{
+                        width: 55px;
+                        height: 55px;
+                    }
+    
+                    .companie-name{
+                        color:$default-color;
+                        font-weight: 200;
+                        align-self:center;
+                        transition:all 500ms ease;
+                    }
+    
+                    
+                }
+    
+            }
+            .companies-display-large-text{
+                text-align: left    
+            }
+    
+            
+        }
+    
+        //LARGE TEXT
+        .large-text{
+            @include personalizedText(1.60em,200);
+            font-family: 'Poppins';
+            text-align: center;
+            align-self:center;
+            margin:3rem auto;
+        }
+    
+        //LARGE BUTTON
+            .large-button{
+                @include large-button();
+            }
+    
+    }
+
 
 }
