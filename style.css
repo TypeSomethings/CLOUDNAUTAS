@@ -2324,7 +2324,7 @@ body {
     gap: 15px;
   }
   .navbar .navbar-conteiner .list-items .item {
-    gap: 1.40rem;
+    margin-right: 2rem;
   }
   .navbar .navbar-conteiner .list-items .item .icon-label {
     display: none;
