@@ -12,6 +12,7 @@ $small-card-height:85px;
 //MARGINS - GAPS - PADDINGS
 $gap-between-elements:15px;
 $default-padding:3rem;
+$mobile-default-padding:.70rem;
 $card-padding:1rem;
 $m-2:2rem;
 $m-5:5rem;
@@ -945,7 +946,12 @@ body{
 
     //NAVBAR
     .navbar{
-        margin-top: 1rem;
+        position:sticky;
+        background-color:rgba(2, 1, 14, 0.353);
+        backdrop-filter: blur(2rem);
+        border-bottom:2px solid $main-purple-color;
+        margin-top: .40rem;
+        z-index:1;
         gap:0;
     
         .navbar-conteiner{
@@ -972,6 +978,7 @@ body{
     //PACKAGES
     .packages-section{
     @include sections(flex,column,center);
+    padding:$mobile-default-padding;
 
     .packages-section-title{
         display:flex;
@@ -1049,6 +1056,7 @@ body{
     //PARTNERSHIPS
     .partnership-section{
         @include sections(flex,column ,center);
+        padding:$mobile-default-padding;
     
         //TITLE
         .partnership-section-title{
@@ -1125,6 +1133,7 @@ body{
     //PLANS
     .plans-section{
         @include sections(flex,column,normal);
+        padding:$mobile-default-padding;
     
         //TITLE
         .plans-section-title{
@@ -1213,7 +1222,7 @@ body{
     //FEATURES
     .features-section{
         @include sections(flex,column,center);
-        padding:$default-padding;
+        padding:$mobile-default-padding;
 
         .experiment-features{
             display: none;
@@ -1299,6 +1308,7 @@ body{
     //SUBSCRIBE
     .subscribe-section{
         @include sections(flex,column,normal);
+        padding:$mobile-default-padding;
     
         //TITLE
         .subscribe-section-title{
@@ -1398,6 +1408,7 @@ body{
     //DOWNLOAD
     .download-section{
         @include sections(flex,column,normal);
+        padding:$mobile-default-padding;
     
         //TITLE
         .download-section-title{
@@ -1499,6 +1510,7 @@ body{
     //FOOTER
     .footer-section{
         @include sections(flex,column,normal);
+        padding:$mobile-default-padding;
         margin-top:$m-5 - 2;
         border-top:$m-5 - 1 solid $main-purple-color;
     
@@ -1584,7 +1596,12 @@ body{
 
     //NAVBAR
     .navbar{
-        margin-top: 1rem;
+        position:sticky;
+        background-color:rgba(2, 1, 14, 0.353);
+        backdrop-filter: blur(2rem);
+        border-bottom:2px solid $main-purple-color;
+        margin-top: .40rem;
+        z-index:1;
         gap:0;
     
         .navbar-conteiner{
@@ -1594,7 +1611,7 @@ body{
                 @include conteiners(flex,row);
     
                 .item{
-                    margin-right: 2rem;
+                    margin:0 1.40rem 0 .20rem;
     
     
                     .icon-label{
@@ -1608,6 +1625,7 @@ body{
     //PACKAGES
     .packages-section{
     @include sections(flex,column,center);
+    padding:$mobile-default-padding;
 
     .packages-section-title{
         display:flex;
@@ -1622,13 +1640,14 @@ body{
 
     .packages-section-conteiner{
         @include conteiners(flex,column);
-        gap:$m-5 - 1;
+        padding:$mobile-default-padding;
         margin:0 auto;
+        gap:$m-5 - 1;
 
         //CARD
         .card{
             @include card();
-            width: 320px;
+            width: 310px;
             transition: all 500ms ease;
 
 
@@ -1670,7 +1689,7 @@ body{
             //CARD BUTTON
             .card-button{
                 @include card-button();
-                width: 18.30rem;
+                width: 17.85rem;
                 transition:all 500ms ease;
             }
 
@@ -1698,6 +1717,7 @@ body{
         //PARTNERSHIPS
         .partnership-section{
             @include sections(flex,column ,center);
+            padding:$mobile-default-padding;
         
             //TITLE
             .partnership-section-title{
@@ -1774,6 +1794,7 @@ body{
         //PLANS
         .plans-section{
             @include sections(flex,column,normal);
+            padding:$mobile-default-padding;
         
             //TITLE
             .plans-section-title{
@@ -1862,7 +1883,7 @@ body{
         //FEATURES
         .features-section{
             @include sections(flex,column,center);
-            padding:$default-padding;
+            padding:$mobile-default-padding;
     
             .experiment-features{
                 display: none;
@@ -1894,11 +1915,12 @@ body{
                 //FEATURES
                 .features{
                     @include conteiners(flex,column);
-                    margin-top: 3rem;
+                    margin: 3rem 0 auto -2rem;
         
                     //CARD
                 .small-card{
                     @include card();
+                    width: 270px;
                     height:$small-card-height;
                     transition: all 500ms ease;
         
@@ -1934,12 +1956,12 @@ body{
         
                 //SECOND CARD
                 #sm-card-2{
-                    transform: translateX($m-2 - 0.70rem);
+                    transform: translateX($m-2 - 0.90rem);
                     margin-bottom:$m-0-4 + 1;
                 }
                  //THIRD CARD
                  #sm-card-3{
-                    transform: translateX($m-2 + 1rem);
+                    transform: translateX($m-2 + .30rem);
                 }
             }
           }
@@ -1948,6 +1970,7 @@ body{
         //SUBSCRIBE
         .subscribe-section{
             @include sections(flex,column,normal);
+            padding:$mobile-default-padding;
         
             //TITLE
             .subscribe-section-title{
@@ -1976,7 +1999,7 @@ body{
                 //CARD
                 .card{
                     @include card();
-                    width: 400px;
+                    width: 340px;
                     height: 437px;
                     margin-top:$m-2 + 1;
                     @include conteiners(flex,column);
@@ -2019,7 +2042,7 @@ body{
                         @include card-button();
                         color:$default-color;
                         font-size: $card-button-font-size;
-                        width: 23.35rem;
+                        width: 19.60rem;
                         margin: -0.3rem auto auto -.3rem;
                         bottom: 0;
                         transition:all 500ms ease;
@@ -2047,6 +2070,7 @@ body{
         //DOWNLOAD
         .download-section{
             @include sections(flex,column,normal);
+            padding:$mobile-default-padding;
         
             //TITLE
             .download-section-title{
@@ -2084,6 +2108,7 @@ body{
         
                     .card{
                         @include card();
+                        width: 270px;
                         transition:all 500ms ease;
                         @include conteiners(flex,row);
                         height:$small-card-height + 10;
