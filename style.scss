@@ -935,3 +935,1290 @@ body{
         }
     }
 }
+
+//TABLET VERSION
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .logo-display,.header-image{
+        display: none;
+    }
+
+    //NAVBAR
+    .navbar{
+        margin-top: 1rem;
+        gap:0;
+    
+        .navbar-conteiner{
+            @include conteiners(flex, row);
+    
+            .list-items{
+                @include conteiners(flex,row);
+    
+                .item{
+                    gap:5px;
+    
+                    img{
+                        display:none;
+                    }
+    
+                    .icon-label{
+                        @include personalizedText(16px,100);
+                    }
+                }
+            }
+        }
+    }
+
+    //PACKAGES
+    .packages-section{
+    @include sections(flex,column,center);
+
+    .packages-section-title{
+        display:flex;
+        justify-content: center;
+
+        .title{
+        @include title();
+        }
+    }
+
+    .packages-section-conteiner{
+        @include conteiners(flex,column);
+        gap:$m-5 - 1;
+        margin:0 auto;
+
+        //CARD
+        .card{
+            @include card();
+            transition: all 500ms ease;
+
+            //CARD TITLE
+            .card-title{
+                display:flex;
+                justify-content: center;
+
+                h2{
+                    @include card-title();
+                }
+            }
+
+            //CARD INFO
+            .card-info-conteiner{
+                @include conteiners(flex,column);
+
+                .list-items{
+                    @include conteiners(flex,column);
+                    margin:38px auto;
+
+                    .item{
+                        @include conteiners(flex,row);
+
+                        .list-icon{
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        .icon-label{
+                            color:$default-color;
+                            margin-top:.2rem;
+                        }
+                    }
+                }
+            }
+
+            //CARD BUTTON
+            .card-button{
+                @include card-button();
+                transition:all 500ms ease;
+            }
+
+            //CARD BUTTON HOVER
+            .card-button:hover{
+                @include card-button-hover();
+            }
+        }
+
+        //CARD HOVER
+        .card:hover{
+            @include card-hover();
+        }
+
+    }
+}
+
+    //PARTNERSHIPS
+    .partnership-section{
+        @include sections(flex,column ,center);
+    
+        //TITLE
+        .partnership-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin-bottom: -$m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        //CONTEINER
+        .partnership-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            .companies-display{
+                @include conteiners(flex,row);
+                flex-wrap: wrap;
+                margin-top: 10rem;
+    
+                .companie{
+                    @include conteiners(flex,row);
+                    transition:all 500ms ease;
+    
+                    .companie-logo{
+                        width: 55px;
+                        height: 55px;
+                    }
+    
+                    .companie-name{
+                        color:$default-color;
+                        font-weight: 200;
+                        align-self:center;
+                        transition:all 500ms ease;
+                    }
+    
+                    
+                }
+    
+            }
+            .companies-display-large-text{
+                text-align: left    
+            }
+    
+            
+        }
+    
+        //LARGE TEXT
+        .large-text{
+            @include personalizedText(1.60em,200);
+            font-family: 'Poppins';
+            text-align: center;
+            align-self:center;
+            margin:3rem auto;
+        }
+    
+        //LARGE BUTTON
+            .large-button{
+                @include large-button();
+            }
+    
+    }
+
+    //PLANS
+    .plans-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .plans-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin-bottom: $m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        .plans-section-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            //CARD
+            .card{
+                @include card();
+                height:$medium-card-height;
+                margin-top:$m-2 + 1;
+                transition: all 500ms ease;
+    
+                //CARD TITLE
+                .card-title{
+                    display:flex;
+                    justify-content: center;
+    
+                    h2{
+                        @include card-title();
+                    }
+                }
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,column);
+    
+                    .list-items{
+                        @include conteiners(flex,column);
+                        margin:42px auto;
+    
+                        .item{
+                            @include conteiners(flex,row);
+    
+                            .list-icon{
+                                width: 24px;
+                                height: 24px;
+                            }
+    
+                            .icon-label{
+                                color:$default-color;
+                               margin-top:-.1rem;
+                            }
+                        }
+                    }
+                }
+    
+                //CARD BUTTON
+                .card-button{
+                    @include card-button();
+                    transition:all 500ms ease;
+                }
+    
+                //CARD BUTTON HOVER
+                .card-button:hover{
+                    @include card-button-hover();
+                }
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+        }
+    }
+
+    //FEATURES
+    .features-section{
+        @include sections(flex,column,center);
+        padding:$default-padding;
+
+        .experiment-features{
+            display: none;
+        }
+    
+        //TITLE
+        .features-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                margin-bottom: $m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        .features-section-conteiner{
+            @include conteiners(flex,row);
+            justify-content: center;
+            margin:4rem auto 2rem auto;
+    
+            //FEATURES
+            .features{
+                @include conteiners(flex,column);
+                margin-top: 3rem;
+    
+                //CARD
+            .small-card{
+                @include card();
+                height:$small-card-height;
+                transition: all 500ms ease;
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,row);
+    
+                    .sm-card-image{
+                        width: 45px;
+                        height: 45px;
+                    }
+    
+                    .icon-label{
+                        color:$default-color;
+                        align-self: center;
+                        font-size: 18px;
+                        font-weight: 200;
+                    }
+                }
+    
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+    
+            //FIRST CARD
+            #sm-card-1{
+                margin-bottom:$m-0-4 + 1;
+            }
+    
+            //SECOND CARD
+            #sm-card-2{
+                transform: translateX($m-2 - 0.70rem);
+                margin-bottom:$m-0-4 + 1;
+            }
+             //THIRD CARD
+             #sm-card-3{
+                transform: translateX($m-2 + 1rem);
+            }
+        }
+      }
+    }
+
+    //SUBSCRIBE
+    .subscribe-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .subscribe-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin:0 auto $m-0-4 auto;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: $m-2;
+            }
+        }
+    
+        .subscribe-section-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            //CARD
+            .card{
+                @include card();
+                width: 400px;
+                height: 437px;
+                margin-top:$m-2 + 1;
+                @include conteiners(flex,column);
+                margin:0 auto;
+                transition: all 500ms ease;
+    
+                //CARD TITLE
+                .card-title{
+                    display:flex;
+                    justify-content: center;
+    
+                    h2{
+                        @include card-title();
+                        text-align: center;
+                    }
+                }
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,column);
+                    margin-top: 1.4rem;
+    
+                    input{
+                        border:none;
+                        padding:1.50rem 5rem;
+                        border-radius: .40rem;
+                        color:$main-purple-color;
+                        background-color:$form-input-background-color;
+                        margin-bottom: 1rem;
+                    }
+    
+                    input::placeholder{
+                        color:$main-purple-color;
+                    }
+    
+                }
+    
+                //CARD BUTTON
+                .card-button{
+                    @include card-button();
+                    color:$default-color;
+                    font-size: $card-button-font-size;
+                    width: 23.35rem;
+                    margin: -0.3rem auto auto -.3rem;
+                    bottom: 0;
+                    transition:all 500ms ease;
+                }
+    
+                //CARD BUTTON HOVER
+                .card-button:hover{
+                    @include card-button-hover();
+                }
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+            //USERS PHOTOS
+            .users-photos-left,.users-photos-right{
+                display:none;
+            }
+    
+        }
+    }
+
+    //DOWNLOAD
+    .download-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .download-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                margin-bottom: $m-2;
+            }
+    
+        }
+    
+        .logo-display{
+            margin:$m-0-4 auto;
+        }
+    
+        .download-section-conteiner{
+            @include conteiners(flex,column);
+            justify-content: center;
+    
+            //CARD
+            .download-option{
+                @include conteiners(flex,column);
+                margin:0 auto 1rem auto;
+                
+    
+                .card-title{
+                    color:$default-color;
+                    font-size: 18px;
+                    font-weight: 100;
+                    margin:0 auto;
+                }
+    
+                .card{
+                    @include card();
+                    transition:all 500ms ease;
+                    @include conteiners(flex,row);
+                    height:$small-card-height + 10;
+    
+                    .list-icon{
+                        width: 50px;
+                        height: 50px;
+                        align-self:center;
+                    }
+    
+                    .icon-label{
+                        font-size: 22px;
+                        color:$default-color;
+                        align-self:center;
+                    }
+                }
+    
+                .card:hover{
+                    @include card-hover();
+                }
+            }
+    
+        }
+    
+        //HELP OPTIONS
+        .help-options{
+            margin-top: $m-5 + 2;
+    
+            .line{
+                border:1px solid $main-purple-color;
+                border-radius: $border-radius;
+                width: 90%;
+                margin:0 auto;
+            }
+    
+            .options{
+                padding:1.1rem;
+                @include conteiners(flex,row);
+                margin-left: 5rem;
+    
+                .icon-label{
+                    color:$default-color;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+    
+                .list-icon{
+                    width: 34px;
+                    height: 34px;
+                    cursor: pointer;
+                    transition:all 500ms ease;
+                }
+    
+                .list-icon:hover{
+                    transform:translateX(15px);
+                }
+            }
+    
+        }
+    }
+
+    //FOOTER
+    .footer-section{
+        @include sections(flex,column,normal);
+        margin-top:$m-5 - 2;
+        border-top:$m-5 - 1 solid $main-purple-color;
+    
+        .footer-section-conteiner{
+            @include conteiners(flex,column);
+            margin-top: $m-2 + 2;
+            justify-content: center;
+    
+            //BRAND
+            .brand{
+                margin:0 0 1rem -.10rem ;
+    
+                .logo{
+                    @include personalizedText(2.30rem,200);
+                }
+                
+                .logo-description{
+                    color:$default-color;
+                    font-weight: lighter;
+                }
+    
+            }
+    
+            //FOOTER OPTIONS
+            .footer-option-list{
+                @include conteiners(flex,column);
+    
+                .title{
+                    @include personalizedText(1.3rem,200);
+                }
+    
+                .list-items{
+                    justify-content: center;
+                    list-style: none;
+    
+                    a{
+                        text-decoration: none;
+                        
+                        .item{
+                            color:$default-color;
+                            margin-bottom: .8rem;
+                            font-weight: lighter;
+                            cursor: pointer;
+                            transition:all 500ms ease;
+                        }
+    
+                    }
+                }
+            }
+    
+            .cloudnautas-social{
+                @include conteiners(flex,row);
+                margin-top: 2.3rem;
+    
+                .list-icon{
+                    width: 34px;
+                    height: 34px;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    
+        .logo-display{
+            margin-top: $m-5;
+            cursor: pointer;
+            
+            .copyright-info{
+                p{
+                color:$default-color;
+            }
+            }
+        }
+    }
+
+}
+
+//SMARTPHONE VERSION
+@media screen and (max-width:767px) {
+    .logo-display,.header-image{
+        display: none;
+    }
+
+    //NAVBAR
+    .navbar{
+        margin-top: 1rem;
+        gap:0;
+    
+        .navbar-conteiner{
+            @include conteiners(flex, row);
+    
+            .list-items{
+                @include conteiners(flex,row);
+    
+                .item{
+                    margin-right: 2rem;
+    
+    
+                    .icon-label{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+
+    //PACKAGES
+    .packages-section{
+    @include sections(flex,column,center);
+
+    .packages-section-title{
+        display:flex;
+        justify-content: center;
+
+        .title{
+        @include title();
+        font-size: 1.50rem;
+        text-align: center;
+        }
+    }
+
+    .packages-section-conteiner{
+        @include conteiners(flex,column);
+        gap:$m-5 - 1;
+        margin:0 auto;
+
+        //CARD
+        .card{
+            @include card();
+            width: 320px;
+            transition: all 500ms ease;
+
+
+            //CARD TITLE
+            .card-title{
+                display:flex;
+                justify-content: center;
+
+                h2{
+                    @include card-title();
+                    font-size: 1.20rem;
+                }
+            }
+
+            //CARD INFO
+            .card-info-conteiner{
+                @include conteiners(flex,column);
+
+                .list-items{
+                    @include conteiners(flex,column);
+                    margin:38px auto;
+
+                    .item{
+                        @include conteiners(flex,row);
+
+                        .list-icon{
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        .icon-label{
+                            color:$default-color;
+                            margin-top:.3rem;
+                        }
+                    }
+                }
+            }
+
+            //CARD BUTTON
+            .card-button{
+                @include card-button();
+                width: 18.30rem;
+                transition:all 500ms ease;
+            }
+
+            //CARD BUTTON HOVER
+            .card-button:hover{
+                @include card-button-hover();
+            }
+        }
+
+        //CARD HOVER
+        .card:hover{
+            @include card-hover();
+        }
+
+        //CARD 3
+        #third-large-card{
+            .card-button{
+                transform: translateY(-1.40rem);
+            }
+            }
+        }
+
+    }
+}
+
+    //PARTNERSHIPS
+    .partnership-section{
+        @include sections(flex,column ,center);
+    
+        //TITLE
+        .partnership-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin-bottom: -$m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        //CONTEINER
+        .partnership-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            .companies-display{
+                @include conteiners(flex,row);
+                flex-wrap: wrap;
+                margin-top: 10rem;
+    
+                .companie{
+                    @include conteiners(flex,row);
+                    transition:all 500ms ease;
+    
+                    .companie-logo{
+                        width: 55px;
+                        height: 55px;
+                    }
+    
+                    .companie-name{
+                        color:$default-color;
+                        font-weight: 200;
+                        align-self:center;
+                        transition:all 500ms ease;
+                    }
+    
+                    
+                }
+    
+            }
+            .companies-display-large-text{
+                text-align: left    
+            }
+    
+            
+        }
+    
+        //LARGE TEXT
+        .large-text{
+            @include personalizedText(1.60em,200);
+            font-family: 'Poppins';
+            text-align: center;
+            align-self:center;
+            margin:3rem auto;
+        }
+    
+        //LARGE BUTTON
+            .large-button{
+                @include large-button();
+            }
+    
+    }
+
+    //PLANS
+    .plans-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .plans-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin-bottom: $m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        .plans-section-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            //CARD
+            .card{
+                @include card();
+                height:$medium-card-height;
+                margin-top:$m-2 + 1;
+                transition: all 500ms ease;
+    
+                //CARD TITLE
+                .card-title{
+                    display:flex;
+                    justify-content: center;
+    
+                    h2{
+                        @include card-title();
+                    }
+                }
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,column);
+    
+                    .list-items{
+                        @include conteiners(flex,column);
+                        margin:42px auto;
+    
+                        .item{
+                            @include conteiners(flex,row);
+    
+                            .list-icon{
+                                width: 24px;
+                                height: 24px;
+                            }
+    
+                            .icon-label{
+                                color:$default-color;
+                               margin-top:-.1rem;
+                            }
+                        }
+                    }
+                }
+    
+                //CARD BUTTON
+                .card-button{
+                    @include card-button();
+                    transition:all 500ms ease;
+                }
+    
+                //CARD BUTTON HOVER
+                .card-button:hover{
+                    @include card-button-hover();
+                }
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+        }
+    }
+
+    //FEATURES
+    .features-section{
+        @include sections(flex,column,center);
+        padding:$default-padding;
+
+        .experiment-features{
+            display: none;
+        }
+    
+        //TITLE
+        .features-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                margin-bottom: $m-0-4;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+            }
+        }
+    
+        .features-section-conteiner{
+            @include conteiners(flex,row);
+            justify-content: center;
+            margin:4rem auto 2rem auto;
+    
+            //FEATURES
+            .features{
+                @include conteiners(flex,column);
+                margin-top: 3rem;
+    
+                //CARD
+            .small-card{
+                @include card();
+                height:$small-card-height;
+                transition: all 500ms ease;
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,row);
+    
+                    .sm-card-image{
+                        width: 45px;
+                        height: 45px;
+                    }
+    
+                    .icon-label{
+                        color:$default-color;
+                        align-self: center;
+                        font-size: 18px;
+                        font-weight: 200;
+                    }
+                }
+    
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+    
+            //FIRST CARD
+            #sm-card-1{
+                margin-bottom:$m-0-4 + 1;
+            }
+    
+            //SECOND CARD
+            #sm-card-2{
+                transform: translateX($m-2 - 0.70rem);
+                margin-bottom:$m-0-4 + 1;
+            }
+             //THIRD CARD
+             #sm-card-3{
+                transform: translateX($m-2 + 1rem);
+            }
+        }
+      }
+    }
+
+    //SUBSCRIBE
+    .subscribe-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .subscribe-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                text-align: center;
+                margin:0 auto $m-0-4 auto;
+            }
+    
+            .title-description{
+                color:$default-color;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: $m-2;
+            }
+        }
+    
+        .subscribe-section-conteiner{
+            @include conteiners(flex,column);
+            margin:0 auto;
+    
+            //CARD
+            .card{
+                @include card();
+                width: 400px;
+                height: 437px;
+                margin-top:$m-2 + 1;
+                @include conteiners(flex,column);
+                margin:0 auto;
+                transition: all 500ms ease;
+    
+                //CARD TITLE
+                .card-title{
+                    display:flex;
+                    justify-content: center;
+    
+                    h2{
+                        @include card-title();
+                        text-align: center;
+                    }
+                }
+    
+                //CARD INFO
+                .card-info-conteiner{
+                    @include conteiners(flex,column);
+                    margin-top: 1.4rem;
+    
+                    input{
+                        border:none;
+                        padding:1.50rem 5rem;
+                        border-radius: .40rem;
+                        color:$main-purple-color;
+                        background-color:$form-input-background-color;
+                        margin-bottom: 1rem;
+                    }
+    
+                    input::placeholder{
+                        color:$main-purple-color;
+                    }
+    
+                }
+    
+                //CARD BUTTON
+                .card-button{
+                    @include card-button();
+                    color:$default-color;
+                    font-size: $card-button-font-size;
+                    width: 23.35rem;
+                    margin: -0.3rem auto auto -.3rem;
+                    bottom: 0;
+                    transition:all 500ms ease;
+                }
+    
+                //CARD BUTTON HOVER
+                .card-button:hover{
+                    @include card-button-hover();
+                }
+            }
+    
+            //CARD HOVER
+            .card:hover{
+                @include card-hover();
+            }
+    
+            //USERS PHOTOS
+            .users-photos-left,.users-photos-right{
+                display:none;
+            }
+    
+        }
+    }
+
+    //DOWNLOAD
+    .download-section{
+        @include sections(flex,column,normal);
+    
+        //TITLE
+        .download-section-title{
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+    
+            .title{
+                @include title();
+                margin-bottom: $m-2;
+            }
+    
+        }
+    
+        .logo-display{
+            margin:$m-0-4 auto;
+        }
+    
+        .download-section-conteiner{
+            @include conteiners(flex,column);
+            justify-content: center;
+    
+            //CARD
+            .download-option{
+                @include conteiners(flex,column);
+                margin:0 auto 1rem auto;
+                
+    
+                .card-title{
+                    color:$default-color;
+                    font-size: 18px;
+                    font-weight: 100;
+                    margin:0 auto;
+                }
+    
+                .card{
+                    @include card();
+                    transition:all 500ms ease;
+                    @include conteiners(flex,row);
+                    height:$small-card-height + 10;
+    
+                    .list-icon{
+                        width: 50px;
+                        height: 50px;
+                        align-self:center;
+                    }
+    
+                    .icon-label{
+                        font-size: 22px;
+                        color:$default-color;
+                        align-self:center;
+                    }
+                }
+    
+                .card:hover{
+                    @include card-hover();
+                }
+            }
+    
+        }
+    
+        //HELP OPTIONS
+        .help-options{
+            margin-top: $m-5 + 2;
+    
+            .line{
+                border:1px solid $main-purple-color;
+                border-radius: $border-radius;
+                width: 90%;
+                margin:0 auto;
+            }
+    
+            .options{
+                padding:1.1rem;
+                @include conteiners(flex,row);
+                margin-left: 5rem;
+    
+                .icon-label{
+                    color:$default-color;
+                    font-size: 17px;
+                    cursor: pointer;
+                }
+    
+                .list-icon{
+                    width: 34px;
+                    height: 34px;
+                    cursor: pointer;
+                    transition:all 500ms ease;
+                }
+    
+                .list-icon:hover{
+                    transform:translateX(15px);
+                }
+            }
+    
+        }
+    }
+
+    //FOOTER
+    .footer-section{
+        @include sections(flex,column,normal);
+        margin-top:$m-5 - 2;
+        border-top:$m-5 - 1 solid $main-purple-color;
+    
+        .footer-section-conteiner{
+            @include conteiners(flex,column);
+            margin-top: $m-2 + 2;
+            justify-content: center;
+    
+            //BRAND
+            .brand{
+                margin:0 0 1rem -.10rem ;
+    
+                .logo{
+                    @include personalizedText(2.30rem,200);
+                }
+                
+                .logo-description{
+                    color:$default-color;
+                    font-weight: lighter;
+                }
+    
+            }
+    
+            //FOOTER OPTIONS
+            .footer-option-list{
+                @include conteiners(flex,column);
+    
+                .title{
+                    @include personalizedText(1.3rem,200);
+                }
+    
+                .list-items{
+                    justify-content: center;
+                    list-style: none;
+    
+                    a{
+                        text-decoration: none;
+                        
+                        .item{
+                            color:$default-color;
+                            margin-bottom: .8rem;
+                            font-weight: lighter;
+                            cursor: pointer;
+                            transition:all 500ms ease;
+                        }
+    
+                    }
+                }
+            }
+    
+            .cloudnautas-social{
+                @include conteiners(flex,row);
+                margin-top: 2.3rem;
+    
+                .list-icon{
+                    width: 34px;
+                    height: 34px;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    
+        .logo-display{
+            margin-top: $m-5;
+            cursor: pointer;
+            
+            .copyright-info{
+                p{
+                color:$default-color;
+            }
+            }
+        }
+    }
