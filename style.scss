@@ -112,6 +112,7 @@ $card-button-font-size:18px;
 
 a{
     text-decoration: none;
+    @include conteiners(flex,row)
 }
 //LOCAL FONTS
 @font-face {
@@ -166,7 +167,7 @@ body{
     margin-top: -5rem;
 
     .navbar-conteiner{
-        @include conteiners(flex, row);;
+        @include conteiners(flex, row);
         margin:0 auto;
 
         .list-items{
