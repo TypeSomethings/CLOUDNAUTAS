@@ -1679,18 +1679,17 @@ body{
             }
         }
 
-        //CARD 3
-        #large-card-3{
-            .card-info-conteiner{
-                .list-items{
-                    margin-top: -4rem;
-                }
-            }
-        }
-
         //CARD HOVER
         .card:hover{
             @include card-hover();
+        }
+
+        //CARD 3
+        #third-large-card{
+            .card-button{
+                transform: translateY(-1.40rem);
+            }
+            }
         }
 
     }
@@ -2223,5 +2222,3 @@ body{
             }
         }
     }
-
-}
