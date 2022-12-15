@@ -1,10 +1,9 @@
 /*CARD*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Poppins,'Poppins',sans-serif;
+  font-family: Poppins, "Poppins", sans-serif;
   bottom: 0;
   top: 0;
   left: 0;
@@ -15,1351 +14,843 @@
 
 a {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
 }
 
 @font-face {
-  font-family: 'Comodo';
+  font-family: "Comodo";
   src: url(fonts/Comodo.otf);
 }
-
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url(fonts/Poppins.ttf);
 }
-
 body {
-  background-color: #02010e;
+  background-color: rgb(2, 1, 14);
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
 
 .logo-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 15px;
 }
-
 .logo-display .logo-display-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
 }
-
 .logo-display .logo-display-conteiner .logo {
   width: 50px;
   height: 50px;
 }
-
 .logo-display .logo-display-conteiner .logo-name {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin-top: 0.4rem;
 }
-
 .logo-display .line {
-  border: 1px solid #5104b2;
+  border: 1px solid rgb(81, 4, 178);
   border-radius: 1rem;
   width: 90%;
   margin: 0 auto;
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-top: -5rem;
 }
-
 .navbar .navbar-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   margin: 0 auto;
 }
-
 .navbar .navbar-conteiner .list-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
 }
-
 .navbar .navbar-conteiner .list-items .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   cursor: pointer;
 }
-
 .navbar .navbar-conteiner .list-items .item img {
   width: 30px;
   height: 30px;
 }
-
 .navbar .navbar-conteiner .list-items .item .icon-label {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 17px;
   font-weight: 100;
   margin-top: 0.4rem;
 }
 
 .header-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
 }
-
 .header-section .header-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   gap: 14rem;
   margin: 0 auto;
 }
-
 .header-section .header-section-conteiner .header-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
-
 .header-section .header-section-conteiner .header-text .biggest-text {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 3rem;
   font-weight: 200;
 }
-
 .header-section .header-section-conteiner .header-text .medium-text {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 100;
 }
 
 .packages-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .packages-section .packages-section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .packages-section .packages-section-title .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin: 5rem auto;
 }
-
 .packages-section .packages-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .packages-section .packages-section-conteiner .card {
   width: 362px;
   height: 447px;
   border-radius: 1rem;
-  border: 2px solid #5104b2;
-  background-color: #030216;
+  border: 2px solid rgb(81, 4, 178);
+  background-color: rgb(3, 2, 22);
   padding: 1rem;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .packages-section .packages-section-conteiner .card .card-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .packages-section .packages-section-conteiner .card .card-title h2 {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   font-weight: 100;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
-
 .packages-section .packages-section-conteiner .card .card-info-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
-
 .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   margin: 25px auto;
 }
-
 .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
 }
-
 .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
   width: 34px;
   height: 34px;
 }
-
 .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
-  color: white;
-  margin-top: .2rem;
+  color: rgb(255, 255, 255);
+  margin-top: 0.2rem;
 }
-
 .packages-section .packages-section-conteiner .card .card-button {
   cursor: pointer;
   border: none;
-  background-color: #5104b2;
-  border-radius: .10rem .10rem .80rem .80rem;
+  background-color: rgb(81, 4, 178);
+  border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
   width: 21rem;
   height: 3rem;
-  margin: -0.3rem auto auto -.3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 500ms ease;
+  margin: -0.3rem auto auto -0.3rem;
+  justify-content: center;
   transition: all 500ms ease;
 }
-
 .packages-section .packages-section-conteiner .card .card-button .button-text {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
-
 .packages-section .packages-section-conteiner .card .card-button:hover {
-  background-color: #710deb;
+  background-color: rgb(113, 13, 235);
 }
-
 .packages-section .packages-section-conteiner .card:hover {
-  border: 2px solid #710deb;
+  border: 2px solid rgb(113, 13, 235);
   cursor: pointer;
 }
 
 .partnership-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
 }
-
 .partnership-section .partnership-section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .partnership-section .partnership-section-title .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin: 5rem auto;
   margin-bottom: -0.4rem;
 }
-
 .partnership-section .partnership-section-title .title-description {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   text-align: center;
 }
-
 .partnership-section .partnership-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   margin: 0 auto;
 }
-
 .partnership-section .partnership-conteiner .companies-display {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   margin-top: 10rem;
 }
-
 .partnership-section .partnership-conteiner .companies-display .companie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .partnership-section .partnership-conteiner .companies-display .companie .companie-logo {
   width: 75px;
   height: 75px;
 }
-
 .partnership-section .partnership-conteiner .companies-display .companie .companie-name {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 200;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-transition: all 500ms ease;
+  align-self: center;
   transition: all 500ms ease;
 }
-
 .partnership-section .partnership-conteiner .companies-display .companie:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  transform: scale(1.1);
+  transform-origin: center;
   cursor: pointer;
 }
-
 .partnership-section .partnership-conteiner .companies-display-large-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .partnership-section .large-text {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2em;
   font-weight: 200;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   text-align: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin: 3rem auto;
 }
-
 .partnership-section .large-button {
   cursor: pointer;
   border: none;
-  background-color: #5104b2;
-  border-radius: .10rem .10rem .80rem .80rem;
+  background-color: rgb(81, 4, 178);
+  border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
   width: 98%;
   height: 3rem;
   margin: 3rem auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .partnership-section .large-button .button-text {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
 
 .plans-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
 }
-
 .plans-section .plans-section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .plans-section .plans-section-title .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin: 5rem auto;
   margin-bottom: 0.4rem;
 }
-
 .plans-section .plans-section-title .title-description {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   text-align: center;
 }
-
 .plans-section .plans-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .plans-section .plans-section-conteiner .card {
   width: 362px;
   height: 447px;
   border-radius: 1rem;
-  border: 2px solid #5104b2;
-  background-color: #030216;
+  border: 2px solid rgb(81, 4, 178);
+  background-color: rgb(3, 2, 22);
   padding: 1rem;
   height: 349px;
   margin-top: 3rem;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .plans-section .plans-section-conteiner .card .card-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .plans-section .plans-section-conteiner .card .card-title h2 {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   font-weight: 100;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
-
 .plans-section .plans-section-conteiner .card .card-info-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
-
 .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   margin: 25px auto;
 }
-
 .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
 }
-
 .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
   width: 34px;
   height: 34px;
 }
-
 .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
-  color: white;
-  margin-top: .2rem;
+  color: rgb(255, 255, 255);
+  margin-top: 0.2rem;
 }
-
 .plans-section .plans-section-conteiner .card .card-button {
   cursor: pointer;
   border: none;
-  background-color: #5104b2;
-  border-radius: .10rem .10rem .80rem .80rem;
+  background-color: rgb(81, 4, 178);
+  border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
   width: 21rem;
   height: 3rem;
-  margin: -0.3rem auto auto -.3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 500ms ease;
+  margin: -0.3rem auto auto -0.3rem;
+  justify-content: center;
   transition: all 500ms ease;
 }
-
 .plans-section .plans-section-conteiner .card .card-button .button-text {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
-
 .plans-section .plans-section-conteiner .card .card-button:hover {
-  background-color: #710deb;
+  background-color: rgb(113, 13, 235);
 }
-
 .plans-section .plans-section-conteiner .card:hover {
-  border: 2px solid #710deb;
+  border: 2px solid rgb(113, 13, 235);
   cursor: pointer;
 }
 
 .features-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
   padding: 3rem;
 }
-
 .features-section .features-section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .features-section .features-section-title .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin: 5rem auto;
   margin-bottom: 0.4rem;
 }
-
 .features-section .features-section-title .title-description {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   text-align: center;
 }
-
 .features-section .features-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 4rem;
 }
-
 .features-section .features-section-conteiner .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   margin-top: 3rem;
 }
-
 .features-section .features-section-conteiner .features .small-card {
   width: 362px;
   height: 447px;
   border-radius: 1rem;
-  border: 2px solid #5104b2;
-  background-color: #030216;
+  border: 2px solid rgb(81, 4, 178);
+  background-color: rgb(3, 2, 22);
   padding: 1rem;
   height: 85px;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .features-section .features-section-conteiner .features .small-card .card-info-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
 }
-
 .features-section .features-section-conteiner .features .small-card .card-info-conteiner .sm-card-image {
   width: 45px;
   height: 45px;
 }
-
 .features-section .features-section-conteiner .features .small-card .card-info-conteiner .icon-label {
-  color: white;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  color: rgb(255, 255, 255);
+  align-self: center;
   font-size: 18px;
   font-weight: 200;
 }
-
 .features-section .features-section-conteiner .features .card:hover {
-  border: 2px solid #710deb;
+  border: 2px solid rgb(113, 13, 235);
   cursor: pointer;
 }
-
 .features-section .features-section-conteiner .features #sm-card-1 {
   margin-bottom: 1.4rem;
 }
-
 .features-section .features-section-conteiner .features #sm-card-2 {
-  -webkit-transform: translateX(5rem);
-          transform: translateX(5rem);
+  transform: translateX(5rem);
   margin-bottom: 1.4rem;
 }
-
 .features-section .features-section-conteiner .features #sm-card-3 {
-  -webkit-transform: translateX(10rem);
-          transform: translateX(10rem);
+  transform: translateX(10rem);
 }
-
 .features-section .features-section-conteiner .experiment-features {
-  margin-right: 1.50rem;
+  margin-right: 1.5rem;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .title {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .title h1 {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   text-align: right;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .title-description {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .title-description p {
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: right;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .description-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  justify-content: right;
   gap: 2px;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .description-icons .list-icon {
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .experiment-button {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  justify-content: right;
+  transform: translateX(50px);
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .experiment-button button {
   cursor: pointer;
   width: 362px;
   height: 447px;
   border-radius: 1rem;
-  border: 2px solid #5104b2;
-  background-color: #030216;
+  border: 2px solid rgb(81, 4, 178);
+  background-color: rgb(3, 2, 22);
   padding: 1rem;
   width: 180px;
   height: 55px;
 }
-
 .features-section .features-section-conteiner .experiment-features .experiment-conteiner .experiment-button button p {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .subscribe-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
 }
-
 .subscribe-section .subscribe-section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .subscribe-section .subscribe-section-title .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin: 5rem auto;
   margin-bottom: 0.4rem;
 }
-
 .subscribe-section .subscribe-section-title .title-description {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 100;
   text-align: center;
 }
-
 .subscribe-section .subscribe-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .subscribe-section .subscribe-section-conteiner .card {
   width: 362px;
   height: 447px;
   border-radius: 1rem;
-  border: 2px solid #5104b2;
-  background-color: #030216;
+  border: 2px solid rgb(81, 4, 178);
+  background-color: rgb(3, 2, 22);
   padding: 1rem;
   width: 475px;
   height: 437px;
   margin-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-title h2 {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   font-weight: 100;
-  -webkit-transform: rotate(-2deg);
-          transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   margin-top: 1.4rem;
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input {
   border: none;
-  padding: 1.50rem 5rem;
-  border-radius: .40rem;
-  color: #5104b2;
-  background-color: #1a003b;
+  padding: 1.5rem 5rem;
+  border-radius: 0.4rem;
+  color: rgb(81, 4, 178);
+  background-color: rgb(26, 0, 59);
   margin-bottom: 1rem;
 }
-
-.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-webkit-input-placeholder {
-  color: #5104b2;
+.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-moz-placeholder {
+  color: rgb(81, 4, 178);
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input:-ms-input-placeholder {
-  color: #5104b2;
+  color: rgb(81, 4, 178);
 }
-
-.subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-ms-input-placeholder {
-  color: #5104b2;
-}
-
 .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::placeholder {
-  color: #5104b2;
+  color: rgb(81, 4, 178);
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-button {
   cursor: pointer;
   border: none;
-  background-color: #5104b2;
-  border-radius: .10rem .10rem .80rem .80rem;
+  background-color: rgb(81, 4, 178);
+  border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
   width: 21rem;
   height: 3rem;
-  margin: -0.3rem auto auto -.3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
+  margin: -0.3rem auto auto -0.3rem;
+  justify-content: center;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   width: 28rem;
-  margin: -0.3rem auto auto -.3rem;
+  margin: -0.3rem auto auto -0.3rem;
   bottom: 0;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-button .button-text {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
 }
-
 .subscribe-section .subscribe-section-conteiner .card .card-button:hover {
-  background-color: #710deb;
+  background-color: rgb(113, 13, 235);
 }
-
 .subscribe-section .subscribe-section-conteiner .card:hover {
-  border: 2px solid #710deb;
+  border: 2px solid rgb(113, 13, 235);
   cursor: pointer;
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-left .card, .subscribe-section .subscribe-section-conteiner .users-photos-right .card {
   width: 87px;
   height: 87px;
-  -webkit-box-shadow: 0px 2px 14px rgba(81, 4, 178, 0.34);
-          box-shadow: 0px 2px 14px rgba(81, 4, 178, 0.34);
+  box-shadow: 0px 2px 14px rgba(81, 4, 178, 0.34);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-left .card .user-photo, .subscribe-section .subscribe-section-conteiner .users-photos-right .card .user-photo {
   width: 55px;
   height: 55px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin: 0;
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-1 {
-  -webkit-transform: translateX(-230px);
-          transform: translateX(-230px);
+  transform: translateX(-230px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-2 {
-  -webkit-transform: translate(-210px, 50px);
-          transform: translate(-210px, 50px);
+  transform: translate(-210px, 50px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-3 {
-  -webkit-transform: translate(-20px, -100px);
-          transform: translate(-20px, -100px);
+  transform: translate(-20px, -100px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-left #tin-card-4 {
-  -webkit-transform: translateX(-230px);
-          transform: translateX(-230px);
+  transform: translateX(-230px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-1 {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
+  transform: translateX(30px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-2 {
-  -webkit-transform: translate(210px, 30px);
-          transform: translate(210px, 30px);
+  transform: translate(210px, 30px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-3 {
-  -webkit-transform: translate(20px, -100px);
-          transform: translate(20px, -100px);
+  transform: translate(20px, -100px);
 }
-
 .subscribe-section .subscribe-section-conteiner .users-photos-right #tin-card-4 {
-  -webkit-transform: translateX(45px);
-          transform: translateX(45px);
+  transform: translateX(45px);
 }
 
 .download-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
 }
-
 .download-section .download-section-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
-
 .download-section .download-section-title .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   font-weight: 200;
   margin: 5rem auto;
   margin-bottom: 0.4rem;
 }
-
 .download-section .logo-display {
   margin: 0.4rem auto;
 }
-
 .download-section .download-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .download-section .download-section-conteiner .download-option {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
   margin-bottom: 0.4rem;
 }
-
 .download-section .download-section-conteiner .download-option .card-title {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 100;
   margin: 0 auto;
 }
-
 .download-section .download-section-conteiner .download-option .card {
   width: 362px;
   height: 447px;
   border-radius: 1rem;
-  border: 2px solid #5104b2;
-  background-color: #030216;
+  border: 2px solid rgb(81, 4, 178);
+  background-color: rgb(3, 2, 22);
   padding: 1rem;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   height: 95px;
 }
-
 .download-section .download-section-conteiner .download-option .card .list-icon {
   width: 50px;
   height: 50px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .download-section .download-section-conteiner .download-option .card .icon-label {
   font-size: 22px;
-  color: white;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  color: rgb(255, 255, 255);
+  align-self: center;
 }
-
 .download-section .download-section-conteiner .download-option .card:hover {
-  border: 2px solid #710deb;
+  border: 2px solid rgb(113, 13, 235);
   cursor: pointer;
 }
-
 .download-section .help-options {
   margin-top: 7rem;
 }
-
 .download-section .help-options .line {
-  border: 1px solid #5104b2;
+  border: 1px solid rgb(81, 4, 178);
   border-radius: 1rem;
   width: 90%;
   margin: 0 auto;
 }
-
 .download-section .help-options .options {
   padding: 1.1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   margin-left: 5rem;
 }
-
 .download-section .help-options .options .icon-label {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 17px;
   cursor: pointer;
 }
-
 .download-section .help-options .options .list-icon {
   width: 34px;
   height: 34px;
   cursor: pointer;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .download-section .help-options .options .list-icon:hover {
-  -webkit-transform: translateX(15px);
-          transform: translateX(15px);
+  transform: translateX(15px);
 }
 
 .footer-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 3rem;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  justify-content: normal;
   margin-top: 3rem;
-  border-top: 4rem solid #5104b2;
+  border-top: 4rem solid rgb(81, 4, 178);
 }
-
 .footer-section .footer-section-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   margin-top: 4rem;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
-
 .footer-section .footer-section-conteiner .brand {
   margin-left: -5rem;
 }
-
 .footer-section .footer-section-conteiner .brand .logo {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 2.3rem;
   font-weight: 200;
 }
-
 .footer-section .footer-section-conteiner .brand .logo-description {
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: lighter;
 }
-
 .footer-section .footer-section-conteiner .footer-option-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 15px;
 }
-
 .footer-section .footer-section-conteiner .footer-option-list .title {
-  font-family: 'Comodo';
-  color: white;
+  font-family: "Comodo";
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
   font-weight: 200;
 }
-
 .footer-section .footer-section-conteiner .footer-option-list .list-items {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style: none;
 }
-
 .footer-section .footer-section-conteiner .footer-option-list .list-items a {
   text-decoration: none;
 }
-
 .footer-section .footer-section-conteiner .footer-option-list .list-items a .item {
-  color: white;
-  margin-bottom: .8rem;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.8rem;
   font-weight: lighter;
   cursor: pointer;
-  -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
-
 .footer-section .footer-section-conteiner .cloudnautas-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   gap: 15px;
   margin-top: 2.3rem;
 }
-
 .footer-section .footer-section-conteiner .cloudnautas-social .list-icon {
   width: 34px;
   height: 34px;
   cursor: pointer;
 }
-
 .footer-section .logo-display {
   margin-top: 5rem;
   cursor: pointer;
 }
-
 .footer-section .logo-display .copyright-info p {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 767px) and (max-width: 1023px) {
@@ -1372,29 +863,19 @@ body {
     background-color: rgba(2, 1, 14, 0.353);
     -webkit-backdrop-filter: blur(2rem);
             backdrop-filter: blur(2rem);
-    border-bottom: 2px solid #5104b2;
-    margin-top: .40rem;
+    border-bottom: 2px solid rgb(81, 4, 178);
+    margin-top: 0.4rem;
     z-index: 1;
     gap: 0;
   }
   .navbar .navbar-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .navbar .navbar-conteiner .list-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .navbar .navbar-conteiner .list-items .item {
@@ -1404,48 +885,32 @@ body {
     display: none;
   }
   .navbar .navbar-conteiner .list-items .item .icon-label {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: 100;
   }
   .packages-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .packages-section .packages-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .packages-section .packages-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
   }
   .packages-section .packages-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     gap: 4rem;
     margin: 0 auto;
@@ -1454,57 +919,36 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .packages-section .packages-section-conteiner .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .packages-section .packages-section-conteiner .card .card-title h2 {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 100;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 38px auto;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
@@ -1512,63 +956,46 @@ body {
     height: 24px;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
-    color: white;
-    margin-top: .2rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0.2rem;
   }
   .packages-section .packages-section-conteiner .card .card-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 21rem;
     height: 3rem;
-    margin: -0.3rem auto auto -.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: all 500ms ease;
+    margin: -0.3rem auto auto -0.3rem;
+    justify-content: center;
     transition: all 500ms ease;
   }
   .packages-section .packages-section-conteiner .card .card-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .packages-section .packages-section-conteiner .card .card-button:hover {
-    background-color: #710deb;
+    background-color: rgb(113, 13, 235);
   }
   .packages-section .packages-section-conteiner .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .partnership-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .partnership-section .partnership-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .partnership-section .partnership-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -1576,44 +1003,27 @@ body {
     margin-bottom: -0.4rem;
   }
   .partnership-section .partnership-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
   }
   .partnership-section .partnership-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
   }
   .partnership-section .partnership-conteiner .companies-display {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 10rem;
   }
   .partnership-section .partnership-conteiner .companies-display .companie {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .partnership-section .partnership-conteiner .companies-display .companie .companie-logo {
@@ -1621,74 +1031,53 @@ body {
     height: 55px;
   }
   .partnership-section .partnership-conteiner .companies-display .companie .companie-name {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 200;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-transition: all 500ms ease;
+    align-self: center;
     transition: all 500ms ease;
   }
   .partnership-section .partnership-conteiner .companies-display-large-text {
     text-align: left;
   }
   .partnership-section .large-text {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.6em;
     font-weight: 200;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     text-align: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin: 3rem auto;
   }
   .partnership-section .large-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 98%;
     height: 3rem;
     margin: 3rem auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .partnership-section .large-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .plans-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
   }
   .plans-section .plans-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .plans-section .plans-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -1696,18 +1085,13 @@ body {
     margin-bottom: 0.4rem;
   }
   .plans-section .plans-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
   }
   .plans-section .plans-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
   }
@@ -1715,59 +1099,38 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     height: 349px;
     margin-top: 3rem;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .plans-section .plans-section-conteiner .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .plans-section .plans-section-conteiner .card .card-title h2 {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 100;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 42px auto;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
@@ -1775,98 +1138,69 @@ body {
     height: 24px;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
-    color: white;
-    margin-top: -.1rem;
+    color: rgb(255, 255, 255);
+    margin-top: -0.1rem;
   }
   .plans-section .plans-section-conteiner .card .card-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 21rem;
     height: 3rem;
-    margin: -0.3rem auto auto -.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: all 500ms ease;
+    margin: -0.3rem auto auto -0.3rem;
+    justify-content: center;
     transition: all 500ms ease;
   }
   .plans-section .plans-section-conteiner .card .card-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .plans-section .plans-section-conteiner .card .card-button:hover {
-    background-color: #710deb;
+    background-color: rgb(113, 13, 235);
   }
   .plans-section .plans-section-conteiner .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .features-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .features-section .experiment-features {
     display: none;
   }
   .features-section .features-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .features-section .features-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
     margin-bottom: 0.4rem;
   }
   .features-section .features-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
   }
   .features-section .features-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 4rem auto 2rem auto;
   }
   .features-section .features-section-conteiner .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin-top: 3rem;
   }
@@ -1874,21 +1208,15 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     height: 85px;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .features-section .features-section-conteiner .features .small-card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .features-section .features-section-conteiner .features .small-card .card-info-conteiner .sm-card-image {
@@ -1896,58 +1224,40 @@ body {
     height: 45px;
   }
   .features-section .features-section-conteiner .features .small-card .card-info-conteiner .icon-label {
-    color: white;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    color: rgb(255, 255, 255);
+    align-self: center;
     font-size: 18px;
     font-weight: 200;
   }
   .features-section .features-section-conteiner .features .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .features-section .features-section-conteiner .features #sm-card-1 {
     margin-bottom: 1.4rem;
   }
   .features-section .features-section-conteiner .features #sm-card-2 {
-    -webkit-transform: translateX(1.3rem);
-            transform: translateX(1.3rem);
+    transform: translateX(1.3rem);
     margin-bottom: 1.4rem;
   }
   .features-section .features-section-conteiner .features #sm-card-3 {
-    -webkit-transform: translateX(3rem);
-            transform: translateX(3rem);
+    transform: translateX(3rem);
   }
   .subscribe-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
   }
   .subscribe-section .subscribe-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .subscribe-section .subscribe-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -1955,19 +1265,14 @@ body {
     margin: 0 auto 0.4rem auto;
   }
   .subscribe-section .subscribe-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
     margin-bottom: 2rem;
   }
   .subscribe-section .subscribe-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
   }
@@ -1975,134 +1280,98 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     width: 400px;
     height: 437px;
     margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-title h2 {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 100;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
     text-align: center;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin-top: 1.4rem;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input {
     border: none;
-    padding: 1.50rem 5rem;
-    border-radius: .40rem;
-    color: #5104b2;
-    background-color: #1a003b;
+    padding: 1.5rem 5rem;
+    border-radius: 0.4rem;
+    color: rgb(81, 4, 178);
+    background-color: rgb(26, 0, 59);
     margin-bottom: 1rem;
   }
-  .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-webkit-input-placeholder {
-    color: #5104b2;
+  .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-moz-placeholder {
+    color: rgb(81, 4, 178);
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input:-ms-input-placeholder {
-    color: #5104b2;
-  }
-  .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-ms-input-placeholder {
-    color: #5104b2;
+    color: rgb(81, 4, 178);
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::placeholder {
-    color: #5104b2;
+    color: rgb(81, 4, 178);
   }
   .subscribe-section .subscribe-section-conteiner .card .card-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 21rem;
     height: 3rem;
-    margin: -0.3rem auto auto -.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: white;
+    margin: -0.3rem auto auto -0.3rem;
+    justify-content: center;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     width: 23.35rem;
-    margin: -0.3rem auto auto -.3rem;
+    margin: -0.3rem auto auto -0.3rem;
     bottom: 0;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-button:hover {
-    background-color: #710deb;
+    background-color: rgb(113, 13, 235);
   }
   .subscribe-section .subscribe-section-conteiner .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .subscribe-section .subscribe-section-conteiner .users-photos-left, .subscribe-section .subscribe-section-conteiner .users-photos-right {
     display: none;
   }
   .download-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
   }
   .download-section .download-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .download-section .download-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -2112,31 +1381,19 @@ body {
     margin: 0.4rem auto;
   }
   .download-section .download-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .download-section .download-section-conteiner .download-option {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto 1rem auto;
   }
   .download-section .download-section-conteiner .download-option .card-title {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 100;
     margin: 0 auto;
@@ -2145,62 +1402,47 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
     height: 95px;
   }
   .download-section .download-section-conteiner .download-option .card .list-icon {
     width: 50px;
     height: 50px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .download-section .download-section-conteiner .download-option .card .icon-label {
     font-size: 22px;
-    color: white;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    color: rgb(255, 255, 255);
+    align-self: center;
   }
   .download-section .download-section-conteiner .download-option .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .download-section .help-options {
     margin-top: 7rem;
   }
   .download-section .help-options .line {
-    border: 1px solid #5104b2;
+    border: 1px solid rgb(81, 4, 178);
     border-radius: 1rem;
     width: 90%;
     margin: 0 auto;
   }
   .download-section .help-options .options {
     padding: 1.1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
     margin-left: 5rem;
   }
   .download-section .help-options .options .icon-label {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 17px;
     cursor: pointer;
   }
@@ -2208,97 +1450,68 @@ body {
     width: 34px;
     height: 34px;
     cursor: pointer;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .download-section .help-options .options .list-icon:hover {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
+    transform: translateX(15px);
   }
   .footer-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
     margin-top: 3rem;
-    border-top: 4rem solid #5104b2;
+    border-top: 4rem solid rgb(81, 4, 178);
   }
   .footer-section .footer-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin-top: 4rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .footer-section .footer-section-conteiner .brand {
-    margin: 0 0 1rem -.10rem;
+    margin: 0 0 1rem -0.1rem;
   }
   .footer-section .footer-section-conteiner .brand .logo {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2.3rem;
     font-weight: 200;
   }
   .footer-section .footer-section-conteiner .brand .logo-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: lighter;
   }
   .footer-section .footer-section-conteiner .footer-option-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   .footer-section .footer-section-conteiner .footer-option-list .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.3rem;
     font-weight: 200;
   }
   .footer-section .footer-section-conteiner .footer-option-list .list-items {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     list-style: none;
   }
   .footer-section .footer-section-conteiner .footer-option-list .list-items a {
     text-decoration: none;
   }
   .footer-section .footer-section-conteiner .footer-option-list .list-items a .item {
-    color: white;
-    margin-bottom: .8rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.8rem;
     font-weight: lighter;
     cursor: pointer;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .footer-section .footer-section-conteiner .cloudnautas-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
     margin-top: 2.3rem;
   }
@@ -2312,10 +1525,9 @@ body {
     cursor: pointer;
   }
   .footer-section .logo-display .copyright-info p {
-    color: white;
+    color: rgb(255, 255, 255);
   }
 }
-
 @media screen and (max-width: 767px) {
   .logo-display, .header-image {
     display: none;
@@ -2326,76 +1538,50 @@ body {
     background-color: rgba(2, 1, 14, 0.353);
     -webkit-backdrop-filter: blur(2rem);
             backdrop-filter: blur(2rem);
-    border-bottom: 2px solid #5104b2;
-    margin-top: .40rem;
+    border-bottom: 2px solid rgb(81, 4, 178);
+    margin-top: 0.4rem;
     z-index: 1;
     gap: 0;
   }
   .navbar .navbar-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .navbar .navbar-conteiner .list-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .navbar .navbar-conteiner .list-items .item {
-    margin: 0 1.40rem 0 .20rem;
+    margin: 0 1.4rem 0 0.2rem;
   }
   .navbar .navbar-conteiner .list-items .item .icon-label {
     display: none;
   }
   .packages-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .packages-section .packages-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .packages-section .packages-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   .packages-section .packages-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     padding: 0.7rem;
     margin: 0 auto;
@@ -2405,59 +1591,38 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     width: 310px;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .packages-section .packages-section-conteiner .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .packages-section .packages-section-conteiner .card .card-title h2 {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 100;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
-    font-size: 1.20rem;
+    transform: rotate(-2deg);
+    font-size: 1.2rem;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 38px auto;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
@@ -2465,68 +1630,50 @@ body {
     height: 24px;
   }
   .packages-section .packages-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
-    color: white;
-    margin-top: .3rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0.3rem;
   }
   .packages-section .packages-section-conteiner .card .card-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 21rem;
     height: 3rem;
-    margin: -0.3rem auto auto -.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: -0.3rem auto auto -0.3rem;
+    justify-content: center;
     width: 17.85rem;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .packages-section .packages-section-conteiner .card .card-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .packages-section .packages-section-conteiner .card .card-button:hover {
-    background-color: #710deb;
+    background-color: rgb(113, 13, 235);
   }
   .packages-section .packages-section-conteiner .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .packages-section .packages-section-conteiner #third-large-card .card-button {
-    -webkit-transform: translateY(-1.4rem);
-            transform: translateY(-1.4rem);
+    transform: translateY(-1.4rem);
   }
   .partnership-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .partnership-section .partnership-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .partnership-section .partnership-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -2534,44 +1681,27 @@ body {
     margin-bottom: -0.4rem;
   }
   .partnership-section .partnership-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
   }
   .partnership-section .partnership-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
   }
   .partnership-section .partnership-conteiner .companies-display {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 10rem;
   }
   .partnership-section .partnership-conteiner .companies-display .companie {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .partnership-section .partnership-conteiner .companies-display .companie .companie-logo {
@@ -2579,74 +1709,53 @@ body {
     height: 55px;
   }
   .partnership-section .partnership-conteiner .companies-display .companie .companie-name {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 200;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -webkit-transition: all 500ms ease;
+    align-self: center;
     transition: all 500ms ease;
   }
   .partnership-section .partnership-conteiner .companies-display-large-text {
     text-align: left;
   }
   .partnership-section .large-text {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.6em;
     font-weight: 200;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     text-align: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin: 3rem auto;
   }
   .partnership-section .large-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 98%;
     height: 3rem;
     margin: 3rem auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .partnership-section .large-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .plans-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
   }
   .plans-section .plans-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .plans-section .plans-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -2654,18 +1763,13 @@ body {
     margin-bottom: 0.4rem;
   }
   .plans-section .plans-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
   }
   .plans-section .plans-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
   }
@@ -2673,59 +1777,38 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     height: 349px;
     margin-top: 3rem;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .plans-section .plans-section-conteiner .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .plans-section .plans-section-conteiner .card .card-title h2 {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 100;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 42px auto;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .list-icon {
@@ -2733,98 +1816,69 @@ body {
     height: 24px;
   }
   .plans-section .plans-section-conteiner .card .card-info-conteiner .list-items .item .icon-label {
-    color: white;
-    margin-top: -.1rem;
+    color: rgb(255, 255, 255);
+    margin-top: -0.1rem;
   }
   .plans-section .plans-section-conteiner .card .card-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 21rem;
     height: 3rem;
-    margin: -0.3rem auto auto -.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transition: all 500ms ease;
+    margin: -0.3rem auto auto -0.3rem;
+    justify-content: center;
     transition: all 500ms ease;
   }
   .plans-section .plans-section-conteiner .card .card-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .plans-section .plans-section-conteiner .card .card-button:hover {
-    background-color: #710deb;
+    background-color: rgb(113, 13, 235);
   }
   .plans-section .plans-section-conteiner .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .features-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding: 0.7rem;
   }
   .features-section .experiment-features {
     display: none;
   }
   .features-section .features-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .features-section .features-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
     margin-bottom: 0.4rem;
   }
   .features-section .features-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
   }
   .features-section .features-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 4rem auto 2rem auto;
   }
   .features-section .features-section-conteiner .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 3rem 0 auto -2rem;
   }
@@ -2832,22 +1886,16 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     width: 270px;
     height: 85px;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .features-section .features-section-conteiner .features .small-card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
   }
   .features-section .features-section-conteiner .features .small-card .card-info-conteiner .sm-card-image {
@@ -2855,58 +1903,40 @@ body {
     height: 45px;
   }
   .features-section .features-section-conteiner .features .small-card .card-info-conteiner .icon-label {
-    color: white;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    color: rgb(255, 255, 255);
+    align-self: center;
     font-size: 18px;
     font-weight: 200;
   }
   .features-section .features-section-conteiner .features .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .features-section .features-section-conteiner .features #sm-card-1 {
     margin-bottom: 1.4rem;
   }
   .features-section .features-section-conteiner .features #sm-card-2 {
-    -webkit-transform: translateX(1.1rem);
-            transform: translateX(1.1rem);
+    transform: translateX(1.1rem);
     margin-bottom: 1.4rem;
   }
   .features-section .features-section-conteiner .features #sm-card-3 {
-    -webkit-transform: translateX(2.3rem);
-            transform: translateX(2.3rem);
+    transform: translateX(2.3rem);
   }
   .subscribe-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
   }
   .subscribe-section .subscribe-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .subscribe-section .subscribe-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -2914,19 +1944,14 @@ body {
     margin: 0 auto 0.4rem auto;
   }
   .subscribe-section .subscribe-section-title .title-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 100;
     text-align: center;
     margin-bottom: 2rem;
   }
   .subscribe-section .subscribe-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
   }
@@ -2934,134 +1959,98 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     width: 340px;
     height: 437px;
     margin-top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-title h2 {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     font-weight: 100;
-    -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
     text-align: center;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin-top: 1.4rem;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input {
     border: none;
-    padding: 1.50rem 5rem;
-    border-radius: .40rem;
-    color: #5104b2;
-    background-color: #1a003b;
+    padding: 1.5rem 5rem;
+    border-radius: 0.4rem;
+    color: rgb(81, 4, 178);
+    background-color: rgb(26, 0, 59);
     margin-bottom: 1rem;
   }
-  .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-webkit-input-placeholder {
-    color: #5104b2;
+  .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-moz-placeholder {
+    color: rgb(81, 4, 178);
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input:-ms-input-placeholder {
-    color: #5104b2;
-  }
-  .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::-ms-input-placeholder {
-    color: #5104b2;
+    color: rgb(81, 4, 178);
   }
   .subscribe-section .subscribe-section-conteiner .card .card-info-conteiner input::placeholder {
-    color: #5104b2;
+    color: rgb(81, 4, 178);
   }
   .subscribe-section .subscribe-section-conteiner .card .card-button {
     cursor: pointer;
     border: none;
-    background-color: #5104b2;
-    border-radius: .10rem .10rem .80rem .80rem;
+    background-color: rgb(81, 4, 178);
+    border-radius: 0.1rem 0.1rem 0.8rem 0.8rem;
     width: 21rem;
     height: 3rem;
-    margin: -0.3rem auto auto -.3rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: white;
+    margin: -0.3rem auto auto -0.3rem;
+    justify-content: center;
+    color: rgb(255, 255, 255);
     font-size: 18px;
-    width: 19.60rem;
-    margin: -0.3rem auto auto -.3rem;
+    width: 19.6rem;
+    margin: -0.3rem auto auto -0.3rem;
     bottom: 0;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-button .button-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
   }
   .subscribe-section .subscribe-section-conteiner .card .card-button:hover {
-    background-color: #710deb;
+    background-color: rgb(113, 13, 235);
   }
   .subscribe-section .subscribe-section-conteiner .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .subscribe-section .subscribe-section-conteiner .users-photos-left, .subscribe-section .subscribe-section-conteiner .users-photos-right {
     display: none;
   }
   .download-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     padding: 0.7rem;
   }
   .download-section .download-section-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
   }
   .download-section .download-section-title .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: 200;
     margin: 5rem auto;
@@ -3071,31 +2060,19 @@ body {
     margin: 0.4rem auto;
   }
   .download-section .download-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .download-section .download-section-conteiner .download-option {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin: 0 auto 1rem auto;
   }
   .download-section .download-section-conteiner .download-option .card-title {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 100;
     margin: 0 auto;
@@ -3104,63 +2081,48 @@ body {
     width: 362px;
     height: 447px;
     border-radius: 1rem;
-    border: 2px solid #5104b2;
-    background-color: #030216;
+    border: 2px solid rgb(81, 4, 178);
+    background-color: rgb(3, 2, 22);
     padding: 1rem;
     width: 270px;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
     height: 95px;
   }
   .download-section .download-section-conteiner .download-option .card .list-icon {
     width: 50px;
     height: 50px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
   }
   .download-section .download-section-conteiner .download-option .card .icon-label {
     font-size: 22px;
-    color: white;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    color: rgb(255, 255, 255);
+    align-self: center;
   }
   .download-section .download-section-conteiner .download-option .card:hover {
-    border: 2px solid #710deb;
+    border: 2px solid rgb(113, 13, 235);
     cursor: pointer;
   }
   .download-section .help-options {
     margin-top: 7rem;
   }
   .download-section .help-options .line {
-    border: 1px solid #5104b2;
+    border: 1px solid rgb(81, 4, 178);
     border-radius: 1rem;
     width: 90%;
     margin: 0 auto;
   }
   .download-section .help-options .options {
     padding: 1.1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
     margin-left: 5rem;
   }
   .download-section .help-options .options .icon-label {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 17px;
     cursor: pointer;
   }
@@ -3168,96 +2130,67 @@ body {
     width: 34px;
     height: 34px;
     cursor: pointer;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .download-section .help-options .options .list-icon:hover {
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
+    transform: translateX(15px);
   }
   .footer-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 3rem;
-    -webkit-box-pack: normal;
-        -ms-flex-pack: normal;
-            justify-content: normal;
+    justify-content: normal;
     margin-top: 3rem;
-    border-top: 4rem solid #5104b2;
+    border-top: 4rem solid rgb(81, 4, 178);
   }
   .footer-section .footer-section-conteiner {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
     margin-top: 4rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .footer-section .footer-section-conteiner .brand {
-    margin: 0 0 1rem -.10rem;
+    margin: 0 0 1rem -0.1rem;
   }
   .footer-section .footer-section-conteiner .brand .logo {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 2.3rem;
     font-weight: 200;
   }
   .footer-section .footer-section-conteiner .brand .logo-description {
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: lighter;
   }
   .footer-section .footer-section-conteiner .footer-option-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 15px;
   }
   .footer-section .footer-section-conteiner .footer-option-list .title {
-    font-family: 'Comodo';
-    color: white;
+    font-family: "Comodo";
+    color: rgb(255, 255, 255);
     font-size: 1.3rem;
     font-weight: 200;
   }
   .footer-section .footer-section-conteiner .footer-option-list .list-items {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     list-style: none;
   }
   .footer-section .footer-section-conteiner .footer-option-list .list-items a {
     text-decoration: none;
   }
   .footer-section .footer-section-conteiner .footer-option-list .list-items a .item {
-    color: white;
-    margin-bottom: .8rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.8rem;
     font-weight: lighter;
     cursor: pointer;
-    -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
   }
   .footer-section .footer-section-conteiner .cloudnautas-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     gap: 15px;
     margin-top: 2.3rem;
   }
@@ -3271,7 +2204,6 @@ body {
     cursor: pointer;
   }
   .footer-section .logo-display .copyright-info p {
-    color: white;
+    color: rgb(255, 255, 255);
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
